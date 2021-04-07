@@ -31,9 +31,10 @@ def createPrivateMatch(modes=["FASTEST", "SHORTEST", "REVERSE"], languages=[]):
         return "Error while creating private match"
 
     data = res.json()
-    print(data)
+    # print(data)
     matchId = data['publicHandle']
-    print(f"https://www.codingame.com/clashofcode/clash/{matchId}")
+    print()
+    return f"https://www.codingame.com/clashofcode/clash/{matchId}"
 
 
 def startMatch():
@@ -62,25 +63,14 @@ def getReport():
     # print(len(data['players']))
 
 
-login("netvisiorscs@gmail.com", "mypassword")
-createPrivateMatch()
-input("Enter to start Match..")
-startMatch()
-t = "n"
-while t != "q":
-    t = input("Enter to get Report...\n")
-    getReport()
+if __name__ == "__main__":
+    pass
+    # createPrivateMatch()
+    # input("Enter to start Match..")
+    # startMatch()
+    # t = "n"
+    # while t != "q":
+    #     t = input("Enter to get Report...\n")
+    #     getReport()
 
-print("Ended")
-# fetch("https://www.codingame.com/services/Codingamer/loginSiteV2", {
-#     "headers": {
-#       "accept": "application/json, text/plain, */*",
-#       "content-type": "application/json;charset=UTF-8"
-#       },
-#     "referrer": "https://www.codingame.com/reset-password/426534049d31d7d4763afd876885968bd9e6e31",
-#     "referrerPolicy": "strict-origin-when-cross-origin",
-#     "body": "[\"netvisiorscs@gmail.com\",\"mypassword\",true]",
-#     "method": "POST",
-#     "mode": "cors",
-#     "credentials": "omit"
-# })
+    # print("Ended")
