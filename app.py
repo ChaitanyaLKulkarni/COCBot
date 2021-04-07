@@ -1,5 +1,5 @@
 import asyncio
-from flask import Flask, jsonify, render_template, make_response, request, url_for,
+from flask import Flask, jsonify
 from bot import Bot
 from threading import Thread
 
