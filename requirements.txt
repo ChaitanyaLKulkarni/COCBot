@@ -1,0 +1,4 @@
+twitchio
+python-dotenv
+gunicorn
+flask
