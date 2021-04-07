@@ -10,7 +10,7 @@ matchId = None
 def login(username, password):
     global myId
     loginURL = "https://www.codingame.com/services/Codingamer/loginSiteV2"
-    jsonData = ["netvisiorscs@gmail.com", "mypassword", "true"]
+    jsonData = [username, password, "true"]
     res = session.post(loginURL, json=jsonData)
     if res.status_code != 200:
         print("ERROR while login!!")
