@@ -1,3 +1,5 @@
+from logging import getLogger
+import re
 import requests
 
 session = requests.Session()
@@ -33,8 +35,14 @@ def createPrivateMatch(modes=["FASTEST", "SHORTEST", "REVERSE"], languages=[]):
     data = res.json()
     # print(data)
     matchId = data['publicHandle']
-    print()
-    return f"https://www.codingame.com/clashofcode/clash/{matchId}"
+    return f"Join Clash: https://www.codingame.com/clashofcode/clash/{matchId}"
+
+
+def getCurrentClash():
+    if matchId is None:
+        return "No Clash Running!!!"
+
+    return f"Join Clash: https://www.codingame.com/clashofcode/clash/{matchId}"
 
 
 def startMatch():
@@ -57,10 +65,26 @@ def getReport():
     url = "https://www.codingame.com/services/ClashOfCode/findClashReportInfoByHandle"
     jsonData = [matchId]
     res = session.post(url, json=jsonData)
-    print("STATUS of Report", res.status_code)
+    # print("STATUS of Report", res.status_code)
     data = res.json()
-    print("DATA", data)
+    # print("DATA", data)
+    return data
     # print(len(data['players']))
+
+
+def leaveCurrentClash():
+    global matchId
+    if matchId is None:
+        print("ERROR Match not Set")
+        return "ERROR"
+    else:
+        url = "https://www.codingame.com/services/ClashOfCode/leaveClashByHandle"
+        jsonData = [myId, matchId]
+        res = session.post(url, json=jsonData)
+        # print("STATUS of Report", res.status_code)
+        if res.status_code == 204:
+            matchId = None
+            return True
 
 
 if __name__ == "__main__":

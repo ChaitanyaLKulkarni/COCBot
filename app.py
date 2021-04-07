@@ -64,7 +64,7 @@ def getChannelView(channleName):
     pass
 
 
-def handle_onCoc():
+def handle_onCoc(msg):
     """Handle COC command that only works if called by Mod
 
     Args:
@@ -73,14 +73,35 @@ def handle_onCoc():
     Returns:
         str: String to send back to Chat
     """
-    # print("Handling Coc ")
+    options = msg.split()
+    # print(options)
+    if len(options) == 2:
+        if options[1].lower() in ["reset", "cancle", "c"]:
+            controller.leaveCurrentClash()
+            return "Current Clashed Cancled!!! "
 
-    return "handled coc"
+    if controller.matchId is not None:
+        data = controller.getReport()
+        if data['started'] == False:
+            controller.startMatch()
+            return f"Starting with {str(len(data['players']) - 1)} Players"
+
+    modes = ["FASTEST", "SHORTEST", "REVERSE"]
+    if len(options) == 2:
+        op = options[1].lower()
+        if op in ["f", "fast", "fastest"]:
+            modes = modes[:1]
+        elif op in ["s", "short", "shortest"]:
+            modes = modes[1:2]
+        elif op in ["r", "reverse"]:
+            modes = modes[2:3]
+    res = controller.createPrivateMatch(modes=modes)
+    return res
 
 
 def handle_onLink():
     # print("Handling Link")
-    return "handled link"
+    return controller.getCurrentClash()
 
 
 def handleBot():

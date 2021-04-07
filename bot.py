@@ -14,7 +14,7 @@ class Bot(commands.Bot):
         self.on_link = None
 
     async def event_ready(self):
-        print(f'Ready | {self.nick}  listening to ', CHANNEL)
+        print(f'Ready | {self.nick}  listening to ', self.initial_channels)
 
     @commands.command(name='coc')
     async def my_command(self, ctx):
@@ -23,7 +23,7 @@ class Bot(commands.Bot):
             return
 
         if self.on_coc:
-            res = self.on_coc()
+            res = self.on_coc(ctx.message.content)
             await ctx.send(res)
 
     @commands.command(name="link", aliases=["l"])
