@@ -123,7 +123,7 @@
 
                             if (currPlayers.innerHTML !== "") {
                                 if (currPlayers.firstElementChild) {
-                                    const prevs = window.localStorage.getItem(
+                                    let prevs = window.localStorage.getItem(
                                         "prev"
                                     );
                                     prevs +=
