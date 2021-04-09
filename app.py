@@ -161,7 +161,7 @@ def handle_onCoc(ctx):
     if len(selectedModes) == 0:
         selectedModes = modes
     # create Private looby
-    res = controller.createPrivateMatch(modes=modes)
+    res = controller.createPrivateMatch(modes=selectedModes)
     currents[chName] = res.split("/")[-1]
     return res
 

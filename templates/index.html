@@ -126,8 +126,11 @@
                                     let prevs = window.localStorage.getItem(
                                         "prev"
                                     );
-                                    prevs +=
-                                        currPlayers.firstElementChild.innerHTML;
+                                    prevs =
+                                        prevs ||
+                                        "" +
+                                            currPlayers.firstElementChild
+                                                .innerHTML;
                                     prev.innerHTML = prevs;
                                     window.localStorage.setItem("prev", prevs);
                                 }
