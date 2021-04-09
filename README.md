@@ -1,4 +1,4 @@
 TODO:
 
 -   [ ] UI
--   [ ] Added Proper Logging
+-   [ ] Add Proper Logging
