@@ -2,3 +2,4 @@ twitchio
 python-dotenv
 gunicorn
 flask
+requests
