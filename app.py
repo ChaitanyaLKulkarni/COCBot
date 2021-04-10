@@ -69,6 +69,7 @@ def getDetail(channleName):
     """
         return current Match detail
     """
+    channleName = channleName.lower()
     if channleName not in currents:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
