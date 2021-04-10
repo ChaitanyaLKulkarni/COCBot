@@ -77,12 +77,24 @@ function App() {
 
     return (
         <div className="App">
-            <h1>{chName.current || "GOTO : /web/<ChannleName>"}</h1>
+            {
+                //<h1>{chName.current || "GOTO : /web/<ChannleName>"}</h1>
+            }
             {chName.current && (
                 <div id="main">
                     <MatchInfo matchData={matchData} />
+                    <div style={{ marginBottom: 5 }}>
+                        {
+                            //Previous</br>
+                        }
+                        <span
+                            style={{ fontSize: "20px", fontWeight: "bolder" }}
+                        >
+                            Winners
+                        </span>
+                        :
+                    </div>
                     <div id="prev-container">
-                        Previous Winners:
                         {prevData.map((data) => (
                             <PlayerInfo
                                 key={data.matchId}

@@ -1,10 +1,52 @@
+#main {
+    background-color: beige;
+}
+.waiting-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.no-player {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
 .match-info {
     display: flex;
     flex-direction: column;
+    background-color: burlywood;
+    text-align: center;
 }
 .player-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    background-color: beige;
+}
+.player-info div:nth-child(2) {
+    font-weight: bold;
+}
+.player-info div:nth-child(3) {
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.match-info .player-info {
+    margin: 5px;
+}
+#prev-container {
+    background-color: burlywood;
+    padding-top: 5px;
+    /* padding: 2%; */
+    display: flex;
+    flex-direction: column;
+}
+.dark {
+    background-color: moccasin;
 }

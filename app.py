@@ -3,7 +3,7 @@ import asyncio
 from threading import Thread
 from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template
-from flask_caching import Cache
+# from flask_caching import Cache
 from bot import Bot
 import controller
 
@@ -17,10 +17,10 @@ CHANNELS = os.environ.get('CHANNEL').split("\s")
 EMAIL = os.environ.get('EMAIL')
 PASSWORD = os.environ.get('PASSWORD')
 
-cache = Cache(config={'CACHE_TYPE': 'SimpleCache'})
+# cache = Cache(config={'CACHE_TYPE': 'SimpleCache'})
 
 app = Flask(__name__, static_folder="client/build", static_url_path='/')
-cache.init_app(app)
+# cache.init_app(app)
 
 currents = {}
 
@@ -64,12 +64,11 @@ def getReport(matchId=None):
 
 
 @ app.route("/api/<channleName>")
-@ cache.memoize(timeout=5)
+# @ cache.memoize(timeout=5)
 def getDetail(channleName):
     """
         return current Match detail
     """
-    print("GEtting...")
     if channleName not in currents:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
