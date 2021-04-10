@@ -4,7 +4,7 @@ import PlayerInfo from "./components/PlayerInfo";
 import "./App.css";
 
 function App() {
-    const chName = useRef(window.location.pathname.split("/").slice(-1)[0]); //Holds Channle Name
+    const [chName, setChName] = useState(""); //Holds Channle Name
     const [matchData, setMatchData] = useState({}); //Holds Current Match Data
 
     //Hold PrevData Initilized by getting `prevData` from localStorage
@@ -16,10 +16,10 @@ function App() {
 
     const fetchData = () => {
         //If Channle Name is Not there return
-        if (!chName.current) return;
+        if (chName === "") return;
 
         //get Report related to Channle Name
-        fetch(`/api/${chName.current}`)
+        fetch(`/api/${chName}`)
             .then((res) => res.json())
             .then((data) => {
                 //If got error in report return
@@ -64,9 +64,10 @@ function App() {
     };
 
     useEffect(() => {
+        fetch("/start");
+        setChName(window.location.pathname.split("/").slice(-1)[0].trim());
         fetchData();
         timer.current = setInterval(() => fetchData(), 5000);
-        fetch("/start");
 
         //Cleanup code for timer
         return () => {
@@ -78,9 +79,11 @@ function App() {
     return (
         <div className="App">
             {
-                //<h1>{chName.current || "GOTO : /web/<ChannleName>"}</h1>
+                <center>
+                    <h2>{chName || "GOTO : /web/<ChannleName>"}</h2>
+                </center>
             }
-            {chName.current && (
+            {chName && (
                 <div id="main">
                     <MatchInfo matchData={matchData} />
                     <div style={{ marginBottom: 5 }}>
