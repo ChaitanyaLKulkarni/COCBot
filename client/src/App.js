@@ -16,7 +16,7 @@ function App() {
 
     const fetchData = () => {
         //If Channle Name is Not there return
-        if (chName === "") return;
+        // if (chName === "") return;
 
         //get Report related to Channle Name
         fetch(`/api/${chName}`)

@@ -71,6 +71,9 @@ def getDetail(channleName):
         return current Match detail
     """
     channleName = channleName.lower()
+    if channleName == "":
+        return jsonify({"status": 404, "message": "Not Found!!!"})
+
     if channleName not in currents:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
@@ -178,7 +181,7 @@ def handle_onLink(ctx):
 
 def handleBot():
     global threadStarted
-    if threadStarted is not None:
+    if threadStarted:
         print("ERROR|", "Bot Already Running")
         return
     # create new async Loop for boot
