@@ -27,7 +27,16 @@ isBotReady = False
 
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')   
+    return app.send_static_file('index.html')
+
+
+@ app.route("/web/<channleName>")
+def getChannelView(channleName):
+    """
+        return the template with the channel name
+        in js store data locally
+    """
+    return app.send_static_file('index.html')
 
 
 @app.route('/start')
@@ -92,15 +101,6 @@ def getDetail(channleName):
         ret["players"].append(pInfo)
 
     return jsonify(ret)
-
-
-@ app.route("/web/<channleName>")
-def getChannelView(channleName):
-    """
-        return the template with the channel name
-        in js store data locally
-    """
-    return render_template('index.html')
 
 
 def handle_onBotReady():
