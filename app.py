@@ -3,6 +3,7 @@ import asyncio
 from threading import Thread
 from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template
+from flask_caching import Cache
 from bot import Bot
 import controller
 
@@ -16,8 +17,10 @@ CHANNELS = os.environ.get('CHANNEL').split("\s")
 EMAIL = os.environ.get('EMAIL')
 PASSWORD = os.environ.get('PASSWORD')
 
+cache = Cache(config={'CACHE_TYPE': 'SimpleCache'})
 
 app = Flask(__name__, static_folder="client/build", static_url_path='/')
+cache.init_app(app)
 
 currents = {}
 
@@ -25,7 +28,7 @@ botThread = None
 isBotReady = False
 
 
-@app.route('/')
+@ app.route('/')
 def index():
     return app.send_static_file('index.html')
 
@@ -39,7 +42,7 @@ def getChannelView(channleName):
     return app.send_static_file('index.html')
 
 
-@app.route('/start')
+@ app.route('/start')
 def startBot():
     global botThread
     if botThread is not None and isBotReady:
@@ -53,18 +56,20 @@ def startBot():
     return jsonify({"status": 202, "message": "Starting bot..."})
 
 
-@app.route("/api/report")  # Show Latest
-@app.route("/api/report/<matchId>")  # Show Specific
+@ app.route("/api/report")  # Show Latest
+@ app.route("/api/report/<matchId>")  # Show Specific
 def getReport(matchId=None):
     report = controller.getReport(matchId)
     return jsonify({"status": 200 if report else 500, "message": report or "ERROR!!!"})
 
 
-@app.route("/api/<channleName>")
+@ app.route("/api/<channleName>")
+@ cache.memoize(timeout=5)
 def getDetail(channleName):
     """
         return current Match detail
     """
+    print("GEtting...")
     if channleName not in currents:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
@@ -112,7 +117,7 @@ def handle_onCoc(ctx):
     """Handle COC command that only works if called by Mod
 
     Args:
-        ctx (Contex): Contex 
+        ctx (Contex): Contex
 
     Returns:
         str: String to send back to Chat
@@ -183,4 +188,4 @@ def handleBot():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
