@@ -123,9 +123,9 @@ def handle_onCoc(ctx):
     """
     msg = ctx.message.content  # message
     options = msg.split()   # split msg to find any options
-    chName = ctx.channel.name  # name of the channel used as key in dict
+    chName = ctx.channel.name.lower()  # name of the channel used as key in dict
     matchId = currents.get(chName, None)    # current MatchId if any
-
+    print("INFO|", chName)
     if len(options) == 2:
         # Check if `reset` or `cancle` or 'c' flag is set
         if options[1].lower() in ["reset", "cancle", "c"]:
