@@ -26,6 +26,7 @@ currents = {}
 
 botThread = None
 isBotReady = False
+threadStarted = False
 
 
 @ app.route('/')
@@ -48,7 +49,7 @@ def startBot():
     if botThread is not None and isBotReady:
         return jsonify({"status": 200, "message": "Bot Running."})
 
-    if botThread is None:
+    if botThread is None and not threadStarted:
         botThread = Thread(target=handleBot, daemon=True)
         botThread.start()
         controller.login(EMAIL, PASSWORD)
@@ -176,6 +177,10 @@ def handle_onLink(ctx):
 
 
 def handleBot():
+    global threadStarted
+    if threadStarted is not None:
+        print("ERROR|", "Bot Already Running")
+        return
     # create new async Loop for boot
     asyncio.set_event_loop(asyncio.new_event_loop())
     # loop = asyncio.get_event_loop()
@@ -183,6 +188,7 @@ def handleBot():
     bot.on_ready = handle_onBotReady
     bot.on_coc = handle_onCoc
     bot.on_link = handle_onLink
+    threadStarted = True
     bot.run()
     # loop.create_task(bot.start())
 

@@ -9,6 +9,8 @@ myId = None
 
 def login(username, password):
     global myId
+    if myId is not None:
+        print("Already logged in")
     loginURL = "https://www.codingame.com/services/Codingamer/loginSiteV2"
     jsonData = [username, password, "true"]
     res = session.post(loginURL, json=jsonData)
