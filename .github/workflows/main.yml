@@ -39,7 +39,7 @@ jobs:
             - name: Push to Heroku
               run: git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git origin/main:master
             
-            #- name: Build and push
+            #- name: Build and pus
             #  env:
             #      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
             #  run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
