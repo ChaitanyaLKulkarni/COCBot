@@ -32,41 +32,10 @@ jobs:
               run: npm run build
               working-directory: ${{env.working-directory}}
 
-            #- name: Login to Heroku Container registry
-            #  env:
-             #     HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-              #run: |
-              #  heroku container:login
-              
-            - name: Add remote origin
+            - name: Push build
               run: |
-                git config --global user.name 'ChaitanyaLKulkarni'
-                git config --global user.email 'ChaitanyaLKulkarni@users.noreply.github.com'
-                git add -f ./client/build
-                git commit -am "Automated Build"
-                git push
-                git fetch --all --unshallow
-                git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git master
-            
-            #- name: Deploy to Heroku
-            #  run: git push -f heroku master
-            #- name: Push to Heroku
-            #  run: git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git main:master
-            
-            #- name: Build and pus
-            #  env:
-            #      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-            #  run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
-
-            #- name: Release
-            #  env:
-            #      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-            #  run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
-
-            # - name: Push build
-            #   run: |
-            #       git config --global user.name 'ChaitanyaLKulkarni'
-            #       git config --global user.email 'ChaitanyaLKulkarni@users.noreply.github.com'
-            #       git add -f ./client/build
-            #       git commit -am "Automated Build"
-            #       git push
+                   git config --global user.name 'ChaitanyaLKulkarni'
+                   git config --global user.email 'ChaitanyaLKulkarni@users.noreply.github.com'
+                   git add -f ./client/build
+                   git commit -am "Automated Build"
+                   git push
