@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import MatchInfo from "./components/MatchInfo";
 import PlayerInfo from "./components/PlayerInfo";
 import "./App.css";
@@ -14,7 +14,7 @@ function App() {
     //Timer for setIntervals
     const timer = useRef(null);
 
-    const fetchData = (tries = 0) => {
+    const fetchData = useCallback((tries = 0) => {
         //If Channle Name is Not there return
         if (chName.current === "") return;
 
@@ -70,7 +70,7 @@ function App() {
                     return data;
                 });
             });
-    };
+    }, []);
 
     useEffect(() => {
         fetch("/start");
@@ -86,7 +86,7 @@ function App() {
             clearInterval(timer.current);
             timer.current = null;
         };
-    }, []);
+    }, [fetchData]);
 
     return (
         <div className="App">
