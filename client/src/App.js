@@ -5,6 +5,7 @@ import "./App.css";
 
 function App() {
     const chName = useRef(""); //Holds Channle Name
+    const tries = useRef(0);
     const [matchData, setMatchData] = useState({}); //Holds Current Match Data
 
     //Hold PrevData Initilized by getting `prevData` from localStorage
@@ -14,11 +15,11 @@ function App() {
     //Timer for setIntervals
     const timer = useRef(null);
 
-    const fetchData = useCallback((tries = 0) => {
+    const fetchData = useCallback(() => {
         //If Channle Name is Not there return
         if (chName.current === "") return;
 
-        if (tries >= 3) {
+        if (tries.current >= 3) {
             console.error("Failed to get valid Data After 3 tries!");
             return;
         }
@@ -28,12 +29,15 @@ function App() {
             .then((res) => res.json())
             .then((data) => {
                 // if conflict was found
-                if (data.status === 409)
-                    setTimeout(() => fetchData(tries + 1), 200);
-
+                if (data.status === 409) {
+                    tries.current++;
+                    setTimeout(() => fetchData(), 200);
+                }
                 //If got error in report return
                 if (data.status !== 200) return;
 
+                //got successful response reset tries
+                tries.current = 0;
                 //Set matchData to currentely feteched data
                 setMatchData((currData) => {
                     //Check if Different match
@@ -79,7 +83,7 @@ function App() {
             .slice(-1)[0]
             .trim();
         fetchData();
-        timer.current = setInterval(() => fetchData(), 5000);
+        timer.current = setInterval(() => fetchData(), 6000);
 
         //Cleanup code for timer
         return () => {
@@ -90,7 +94,11 @@ function App() {
 
     return (
         <div className="App">
-            {<h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>}
+            {
+                <center>
+                    <h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>
+                </center>
+            }
             <div id="main">
                 <MatchInfo matchData={matchData} />
                 <div style={{ marginBottom: 5 }}>
