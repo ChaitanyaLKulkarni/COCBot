@@ -94,6 +94,7 @@ function App() {
 
     return (
         <div className="App">
+            HELLO
             {
                 <center>
                     <h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>
