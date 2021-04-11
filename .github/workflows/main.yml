@@ -13,7 +13,7 @@ jobs:
             working-directory: ./client
         strategy:
             matrix:
-                node-version: 12
+                node-version: "12"
 
         steps:
             - name: Checkout repository
