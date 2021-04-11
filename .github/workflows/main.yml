@@ -40,10 +40,8 @@ jobs:
               
             - name: Add remote origin
               run: |
-                git add .
                 git add -f ./client/build
                 git commit -am "Auto Deploy"
-                git fetch --all --unshallow
                 git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
             
             - name: Deploy to Heroku
