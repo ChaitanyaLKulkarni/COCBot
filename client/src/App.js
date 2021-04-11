@@ -96,7 +96,7 @@ function App() {
         <div className="App">
             HELLO
             {
-                    <h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>
+                    <center><h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2></center>
             }
             <div id="main">
                 <MatchInfo matchData={matchData} />
