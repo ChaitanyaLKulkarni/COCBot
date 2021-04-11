@@ -51,6 +51,22 @@ jobs:
 
                   git_setup
                   git remote update
+                  git fetch --all
+                  git remote update
+                  
+                  git stash
+
+                  # Will create branch if it does not exist
+                  if [[ $( git branch -r | grep "build" ) ]]; then
+                     git checkout "build"
+                  else
+                     git checkout -b "build"
+                  fi
+
+                  git stash pop
+                  git rm -r -f --cached
+                  git rm -r -f *
+                  git add .
                   git add -f ./client/build 
                   git commit -m "Auto Build"
-                  git push --set-upstream origin "build"
+                  git push origin "build"
