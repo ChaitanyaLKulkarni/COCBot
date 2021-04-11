@@ -36,8 +36,16 @@ jobs:
               env:
                   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
               run: heroku container:login
-            - name: Push to Heroku
-              run: git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git origin/main:master
+              
+            - name: Add remote origin
+              run: |
+                git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
+            
+            - name: Deploy to Heroku
+              run: |
+                git push heroku HEAD:master -f
+            #- name: Push to Heroku
+            #  run: git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git main:master
             
             #- name: Build and pus
             #  env:
