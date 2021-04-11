@@ -97,27 +97,31 @@ function App() {
                     <h2>{chName.current || "plzGOTO: /web/<ChannleName>"}</h2>
                 </center>
             }
-            <div id="main">
-                <MatchInfo matchData={matchData} />
-                <div style={{ marginBottom: 5 }}>
-                    {
-                        //Previous</br>
-                    }
-                    <span style={{ fontSize: "20px", fontWeight: "bolder" }}>
-                        Winners
-                    </span>
-                    :
+            {chName.current && (
+                <div id="main">
+                    <MatchInfo matchData={matchData} />
+                    <div style={{ marginBottom: 5 }}>
+                        {
+                            //Previous</br>
+                        }
+                        <span
+                            style={{ fontSize: "20px", fontWeight: "bolder" }}
+                        >
+                            Winners
+                        </span>
+                        :
+                    </div>
+                    <div id="prev-container">
+                        {prevData.map((data) => (
+                            <PlayerInfo
+                                key={data.matchId}
+                                playerData={data.winner}
+                                matchData={data}
+                            />
+                        ))}
+                    </div>
                 </div>
-                <div id="prev-container">
-                    {prevData.map((data) => (
-                        <PlayerInfo
-                            key={data.matchId}
-                            playerData={data.winner}
-                            matchData={data}
-                        />
-                    ))}
-                </div>
-            </div>
+            )}
         </div>
     );
 }
