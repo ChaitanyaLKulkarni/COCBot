@@ -42,7 +42,7 @@ jobs:
             - name: Push To Heroku
               run: |
                   heroku login
-                  git remote add heroku https://heroku:${{ secrets.HEROKU_API_TOKEN }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
+                  git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
                   git fetch --all --unshallow 
                   git push heroku main:refs/heads/master --force
-              env: HEROKU_API_KEY:${{ secrets.HEROKU_API_KEY }}
+              env: HEROKU_API_KEY:${{ secrets.HEROKU_API_TOKEN }}
