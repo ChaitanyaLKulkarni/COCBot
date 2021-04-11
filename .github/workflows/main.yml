@@ -39,3 +39,4 @@ jobs:
                   git add -f ./client/build 
                   git commit -am "Automated Build"
                   git push -u -f build
+              working-directory: ./
