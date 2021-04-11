@@ -4,7 +4,9 @@ import PlayerInfo from "./components/PlayerInfo";
 import "./App.css";
 
 function App() {
-    const chName = useRef(""); //Holds Channle Name
+    const chName = useRef(
+        window.location.pathname.split("/").slice(-1)[0].trim()
+    ); //Holds Channle Name
     const tries = useRef(0);
     const [matchData, setMatchData] = useState({}); //Holds Current Match Data
 
@@ -78,10 +80,6 @@ function App() {
 
     useEffect(() => {
         fetch("/start");
-        chName.current = window.location.pathname
-            .split("/")
-            .slice(-1)[0]
-            .trim();
         fetchData();
         timer.current = setInterval(() => fetchData(), 6000);
 
