@@ -45,7 +45,8 @@ jobs:
                 git add -f ./client/build
                 git commit -am "Automated Build"
                 git push
-                git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git main:master
+                git fetch --all --unshallow
+                git push -f https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git master
             
             #- name: Deploy to Heroku
             #  run: git push -f heroku master
