@@ -71,8 +71,8 @@ def getReport(mid=None):
     res = session.post(url, json=jsonData)
     # print("STATUS of Report", res.status_code)
     data = res.json()
-    with open("f.json", "w") as f:
-        json.dump(data, f)
+    # with open("f.json", "w") as f:
+    #     json.dump(data, f)
     # print("DATA", data)
     return data
     # print(len(data['players']))

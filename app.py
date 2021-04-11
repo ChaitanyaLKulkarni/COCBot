@@ -64,26 +64,35 @@ def getReport(matchId=None):
     return jsonify({"status": 200 if report else 500, "message": report or "ERROR!!!"})
 
 
+@cache.memoize(timeout=5)
+def getReportFromController(matchId):
+    return controller.getReport(matchId)
+
+
 @ app.route("/api/<channleName>")
-@ cache.memoize(timeout=5)
 def getDetail(channleName):
     """
         return current Match detail
     """
     channleName = channleName.lower()
-    if channleName == "":
-        return jsonify({"status": 404, "message": "Not Found!!!"})
-
-    if channleName not in currents:
+    if channleName == "" or channleName not in currents:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
     matchId = currents[channleName]
-    report = controller.getReport(matchId)
+    report = getReportFromController(matchId)
     isStarted = report['started']
 
     ret = {"status": 200, "started": isStarted,
            "matchId": matchId,
            "noPlayers": len(report["players"])-1, "players": []}
+
+    # if not even bot in lobby discard the match and send `409` i.e. conflict
+    if ret['noPlayers'] < 0:
+        # remove current match from currents list
+        if channleName in currents:
+            del currents[channleName]
+        return jsonify({"status": 409, "message": "Found Empty Match!!"})
+
     if isStarted:
         ret['mode'] = report['mode']
         ret['msBeforeEnd'] = report['msBeforeEnd']

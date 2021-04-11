@@ -14,14 +14,23 @@ function App() {
     //Timer for setIntervals
     const timer = useRef(null);
 
-    const fetchData = () => {
+    const fetchData = (tries = 0) => {
         //If Channle Name is Not there return
         if (chName.current === "") return;
+
+        if (tries >= 3) {
+            console.error("Failed to get valid Data After 3 tries!");
+            return;
+        }
 
         //get Report related to Channle Name
         fetch(`/api/${chName.current}`)
             .then((res) => res.json())
             .then((data) => {
+                // if conflict was found
+                if (data.status === 409)
+                    setTimeout(() => fetchData(tries + 1), 200);
+
                 //If got error in report return
                 if (data.status !== 200) return;
 
