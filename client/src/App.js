@@ -90,9 +90,7 @@ function App() {
 
     return (
         <div className="App">
-            {
-                //<h1>{chName.current || "GOTO : /web/<ChannleName>"}</h1>
-            }
+            {<h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>}
             <div id="main">
                 <MatchInfo matchData={matchData} />
                 <div style={{ marginBottom: 5 }}>
@@ -114,7 +112,6 @@ function App() {
                     ))}
                 </div>
             </div>
-            )
         </div>
     );
 }
