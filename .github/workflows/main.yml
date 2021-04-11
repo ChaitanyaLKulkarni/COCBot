@@ -37,7 +37,7 @@ jobs:
                   git config --global user.name 'ChaitanyaLKulkarni'
                   git config --global user.email 'ChaitanyaLKulkarni@users.noreply.github.com'
                   git remote set-url --push origin https://ChaitanyaLKulkarni:$GITHUB_TOKEN@github.com/COCBot
-                  git checkout origin build
+                  git checkout build
                   git add -f ./client/build 
                   git commit -am "Automated Build"
-                  git push -u -f origin build
+                  git push -u -f build
