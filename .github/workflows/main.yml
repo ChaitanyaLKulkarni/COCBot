@@ -13,7 +13,7 @@ jobs:
             working-directory: ./client
         strategy:
             matrix:
-                node-version: [12]
+                node-version: [12.x]
 
         steps:
             - name: Checkout repository
@@ -34,33 +34,8 @@ jobs:
 
             - name: Push build
               run: |
-                  git_setup() {
-                    cat <<- EOF > $HOME/.netrc
-                      machine github.com
-                      login $GITHUB_ACTOR
-                      password $GITHUB_TOKEN
-                      machine api.github.com
-                      login $GITHUB_ACTOR
-                      password ${{ secrets.GITHUB_TOKEN }}
-                  EOF
-                    chmod 600 $HOME/.netrc
-
-                    git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
-                    git config --global user.name "$GITHUB_ACTOR"
-                  }
-
-                  git_setup
-                  git remote update
-                  
-                  git stash
-                  # Will create branch if it does not exist
-                  if [[ $( git branch -r | grep "build" ) ]]; then
-                     git checkout "build"
-                  else
-                     git checkout -b "build"
-                  fi
-                  git stash pop
-                  git add .
+                  git config --global user.name 'ChaitanyaLKulkarni'
+                  git config --global user.email 'ChaitanyaLKulkarni@users.noreply.github.com'
                   git add -f ./client/build 
-                  git commit -m "Auto Build"
-                  git push origin "build"
+                  git commit -am "Automated Build"
+                  git push
