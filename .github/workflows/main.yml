@@ -52,7 +52,6 @@ jobs:
                   git_setup
                   git remote update
                   git fetch --all
-                  git remote update
                   
                   git stash
 
@@ -64,8 +63,6 @@ jobs:
                   fi
 
                   git stash pop
-                  git rm -r -f --cached
-                  git rm -r -f *
                   git add .
                   git add -f ./client/build 
                   git commit -m "Auto Build"
