@@ -13,6 +13,6 @@ TODO:
 -   [ ] Add Proper Logging
 -   [ ] Add Clear button to reset localStorage
 -   [ ] Get Language icon for corresponding ones
-
+-   [x] Add Auto build using github-actions
 -   [x] _Debug_: Showing null in prev Container not addind multiple prev
 -   [x] Cache output of report function for some time to reduce outgoing bandwidth
