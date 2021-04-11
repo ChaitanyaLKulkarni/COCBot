@@ -96,7 +96,7 @@ function App() {
         <div className="App">
             {
                 <center>
-                    <h2>{chName.current || "GOTO : /web/<ChannleName>"}</h2>
+                    <h2>{chName.current || "plz GOTO: /web/<ChannleName>"}</h2>
                 </center>
             }
             <div id="main">
