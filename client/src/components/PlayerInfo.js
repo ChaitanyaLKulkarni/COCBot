@@ -1,10 +1,16 @@
 import React from "react";
-
+import pythonLogo from "../python.png";
+import perlLog from "../perl.png";
 function PlayerInfo({ playerData, index }) {
     const sec = Math.floor(playerData.duration / 1000);
     const duration = `${("00" + Math.floor(sec / 60)).slice(-2)}m:${(
         "00" + Math.floor(sec % 60)
     ).slice(-2)}s`;
+    const language = playerData.language
+        .toLowerCase()
+        .replaceAll("+", "plus")
+        .replaceAll("#", "sharp")
+        .replaceAll(/[0-9]|-/g, "");
     return (
         <div
             className={
@@ -16,7 +22,15 @@ function PlayerInfo({ playerData, index }) {
                     : "")
             }
         >
-            <div>{playerData.language}</div>
+            {["python", "perl"].includes(language) ? (
+                <img
+                    className="icon"
+                    src={language === "python" ? pythonLogo : perlLog}
+                    alt={playerData.language}
+                />
+            ) : (
+                <i className={`devicon-${language}-plain colored icon`}></i>
+            )}
             <div className="name">
                 <img
                     className="avatar"

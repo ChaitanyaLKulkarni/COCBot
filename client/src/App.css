@@ -62,3 +62,8 @@ h2 {
     margin-top: 0;
     margin-left: -40px;
 }
+.icon {
+    font-size: 30px;
+    height: 30px;
+    width: auto;
+}

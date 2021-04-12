@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import MatchInfo from "./components/MatchInfo";
 import PlayerInfo from "./components/PlayerInfo";
 import "./App.css";
-
 function App() {
     const chName = useRef(
         window.location.pathname.split("/").slice(-1)[0].trim()
