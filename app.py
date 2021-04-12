@@ -139,6 +139,8 @@ def getPrev(channelName):
         m = controller.getReport(match)
         w = m['players'][0]
         o = {"matchId": match, "winner": {
+            "name": w['codingamerNickname'],
+            "avatarId": w.get('codingamerAvatarId', None),
             "rank": w['rank'], "duration": w["duration"], "language": w["languageId"]}}
         op.append(o)
     return jsonify(op)
