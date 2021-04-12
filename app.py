@@ -153,10 +153,10 @@ def getDetail(channelName):
     """
     channelName = channelName.lower()
     info = db.getMatchInfo(channelName)
-    if channelName == "" or not info:
+    matchId = info.get("currentMatch")
+    if channelName == "" or not info or matchId == "":
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
-    matchId = info["currentMatch"]
     report = getReportFromController(matchId)
     isStarted = report['started']
 
