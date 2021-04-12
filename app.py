@@ -6,6 +6,7 @@ from functools import wraps
 from flask import Flask, jsonify, request, make_response
 from flask_caching import Cache
 from bot import Bot
+from db import DB
 import controller
 
 load_dotenv("./.env")
@@ -19,12 +20,14 @@ EMAIL = os.environ.get('EMAIL')
 PASSWORD = os.environ.get('PASSWORD')
 ADMIN_USER = os.environ.get('ADMIN_USER')
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASS')
+DB_USER = os.environ.get('DB_USER')
+DB_PASS = os.environ.get('DB_PASS')
 
 app = Flask(__name__, static_folder="client/build", static_url_path='/')
 app.config['CACHE_TYPE'] = "SimpleCache"
 cache = Cache(app)
 
-currents = {}
+db = DB(DB_USER, DB_PASS)
 
 botThread = None
 isBotReady = False
@@ -46,8 +49,8 @@ def index():
     return app.send_static_file('index.html')
 
 
-@ app.route("/web/<channleName>")
-def getChannelView(channleName):
+@ app.route("/web/<channelName>")
+def getChannelView(channelName):
     """
         return the template with the channel name
         in js store data locally
@@ -55,13 +58,13 @@ def getChannelView(channleName):
     return app.send_static_file('index.html')
 
 
-@app.route("/delete")
-def deleteLocal():
-    return app.send_static_file('index.html')
-
-
 @ app.route('/start')
 def startBot():
+    """Start the TwitchIo bot and LogInto Codingame
+
+    Returns:
+        json: with Status of bot i.e. 200 if running or 202 if creating
+    """
     global botThread
     if botThread is not None and isBotReady:
         return jsonify({"status": 200, "message": "Bot Running."})
@@ -74,54 +77,84 @@ def startBot():
     return jsonify({"status": 202, "message": "Starting bot..."})
 
 
-@ app.route("/api/report")  # Show Latest
 @ app.route("/api/report/<matchId>")  # Show Specific
-def getReport(matchId=None):
+def getReport(matchId):
+    """Gets full report of match
+
+    Args:
+        matchId (str): matchId to get report of.
+
+    Returns:
+        json: full report as it is from codingame of given `matchId`
+    """
     report = controller.getReport(matchId)
     return jsonify({"status": 200 if report else 500, "message": report or "ERROR!!!"})
 
 
 @ cache.memoize(timeout=5)
 def getReportFromController(matchId):
+    """ Get report from codingame, Memoized to reduce outgoing requests"""
     return controller.getReport(matchId)
 
 
 @app.route("/view")
 @authorize
 def viewCurrent():
-    return jsonify({"status": 200, "message": currents})
+    """ADMIN ONLY: Show all of users
+
+    Returns:
+        json: all data of users Match
+    """
+    return jsonify({"status": 200, "message": db.getAll()})
 
 
-@ app.route("/set/<channleName>/<matchId>")
+@ app.route("/set/<channelName>/<matchId>")
 @authorize
-def setManual(channleName, matchId):
-    currents[channleName] = matchId
-    return jsonify({"status": 200, "message": currents})
+def setManual(channelName, matchId):
+    """ADMIN ONLY: Manually sets currentMatch of `channelNamer
+
+    Args:
+        channelName (str): channelName
+        matchId (str): new MatchId to be set
+
+    Returns:
+        json: shows channelName info
+    """
+    cancelPrev = request.args.get("cancel")
+    if cancelPrev:
+        db.cancleMatch(matchId)
+
+    db.addNewMatch(channelName, matchId)
+
+    return jsonify({"status": 200, "message": db.getMatchInfo(channelName)})
 
 
-@ app.route("/api/<channleName>")
-def getDetail(channleName):
+@app.route("/api/prev/<channelName>")
+def getPrev(channelName):
+    info = db.getMatchInfo(channelName)
+    if not info:
+        return jsonify([])
+
+    return jsonify(info.get("prevMatches"))
+
+
+@ app.route("/api/<channelName>")
+def getDetail(channelName):
     """
         return current Match detail
     """
-    channleName = channleName.lower()
-    if channleName == "" or channleName not in currents:
+    channelName = channelName.lower()
+    info = db.getMatchInfo(channelName)
+    if channelName == "" or not info:
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
-    matchId = currents[channleName]
+    matchId = info["currentMatch"]
     report = getReportFromController(matchId)
     isStarted = report['started']
 
     ret = {"status": 200, "started": isStarted,
            "matchId": matchId,
            "noPlayers": len(report["players"])-1, "players": []}
-
-    # if not even bot in lobby discard the match and send `409` i.e. conflict
-    if ret['noPlayers'] < 0:
-        # remove current match from currents list
-        if channleName in currents:
-            del currents[channleName]
-        return jsonify({"status": 409, "message": "Found Empty Match!!"})
 
     if isStarted:
         ret['mode'] = report['mode']
@@ -153,6 +186,7 @@ def getDetail(channleName):
 
 
 def handle_onBotReady():
+    """ To set isbotReady flag"""
     global isBotReady
     isBotReady = True
 
@@ -169,24 +203,25 @@ def handle_onCoc(ctx):
     msg = ctx.message.content  # message
     options = msg.split()   # split msg to find any options
     chName = ctx.channel.name.lower()  # name of the channel used as key in dict
-    matchId = currents.get(chName, None)    # current MatchId if any
-    print("INFO|", chName)
+    info = db.getMatchInfo(chName)    # current Match if any
+    matchId = "" if not info else info.get(
+        "currentMatch")  # if match then get current Match
+
     if len(options) == 2:
         # Check if `reset` or `cancle` or 'c' flag is set
-        if options[1].lower() in ["reset", "cancle", "c"]:
+        if options[1].lower() in ["reset", "cancel", "c"]:
             # if no match is running
-            if chName not in currents:
-                return "No Clash Running to cancle!!"
+            if matchId == "":
+                return "No Clash Running to cancel!!"
 
-            # Remove from DB and leave that match
+            # Leave that match and Remove from DB
             controller.leaveCurrentClash(matchId)
-            if chName in currents:
-                del currents[chName]
+            db.cancleMatch(matchId)
 
             return "Current Clashed Cancled!!! "
 
     # if already match exits Start if not Started
-    if chName in currents:
+    if matchId != "":
         data = controller.getReport(matchId)
         if data['started'] == False:
             controller.startMatch(matchId)
@@ -211,15 +246,25 @@ def handle_onCoc(ctx):
         selectedModes = modes
     # create Private looby
     res = controller.createPrivateMatch(modes=selectedModes)
-    currents[chName] = res.split("/")[-1]
+    db.addNewMatch(res.split("/")[-1])
     return res
 
 
 def handle_onLink(ctx):
-    return controller.getCurrentClash(currents.get(ctx.channel.name, None))
+    """Return link of the current Match according to channelName
+
+    Args:
+        ctx (Context): TwitchIO context object
+
+    Returns:
+        str | None: link of current match
+    """
+    return controller.getCurrentClash(db.getMatchInfo(ctx.channel.name))
 
 
 def handleBot():
+    """Handles the bot starting procedure
+    """
     global threadStarted
     if threadStarted:
         print("ERROR|", "Bot Already Running")

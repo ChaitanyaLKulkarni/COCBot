@@ -41,7 +41,11 @@ def createPrivateMatch(modes=["FASTEST", "SHORTEST", "REVERSE"], languages=[]):
 
 
 def getCurrentClash(mid=None):
-    if mid is None:
+
+    if mid and mid is not isinstance(mid, str):
+        mid = mid.get("currentMatch")
+
+    if mid is None or mid == "":
         return "No Clash Running!!!"
 
     return f"Join Clash: https://www.codingame.com/clashofcode/clash/{mid}"

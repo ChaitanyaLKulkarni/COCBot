@@ -4,3 +4,4 @@ gunicorn
 flask
 Flask-Caching
 requests
+pymongo[srv]

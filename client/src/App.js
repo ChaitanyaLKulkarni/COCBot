@@ -5,46 +5,29 @@ import "./App.css";
 function App() {
     const chName = useRef(
         window.location.pathname.split("/").slice(-1)[0].trim()
-    ); //Holds Channle Name
-    const tries = useRef(0);
+    ); //Holds Channel Name
     const [matchData, setMatchData] = useState({}); //Holds Current Match Data
 
-    //Hold PrevData Initilized by getting `prevData` from localStorage
-    const [prevData, setPrevData] = useState(
-        JSON.parse(window.localStorage.getItem("prevData")) || []
-    );
+    //Hold PrevData
+    const [prevData, setPrevData] = useState([]);
     //Timer for setIntervals
     const timer = useRef(null);
 
     const fetchData = useCallback(() => {
-        //If Channle Name is Not there return
+        //If Channel Name is Not there return
         if (chName.current === "") return;
-
-        if (tries.current >= 3) {
-            console.error("Failed to get valid Data After 3 tries!");
-            return;
-        }
-
-        //get Report related to Channle Name
+        //get Report related to Channel Name
         fetch(`/api/${chName.current}`)
             .then((res) => res.json())
             .then((data) => {
-                // if conflict was found
-                if (data.status === 409) {
-                    tries.current++;
-                    setTimeout(() => fetchData(), 200);
-                }
-                //If got error in report return
-                if (data.status !== 200) return;
-
-                //got successful response reset tries
-                tries.current = 0;
+                //If got error in report return or invalid data
+                if (data.status !== 200 || data.noPlayers < 0) return;
                 //Set matchData to currentely feteched data
                 setMatchData((currData) => {
                     //Check if Different match
                     // i.e. new lobby
                     if (currData.matchId !== data.matchId) {
-                        //If current lobby was started then put it in PrevData and Save to localStorae
+                        //If current lobby was started then put it in PrevData
                         if (currData && currData.started) {
                             setPrevData((p) => {
                                 if (
@@ -64,10 +47,6 @@ function App() {
                                     },
                                     ...p,
                                 ];
-                                window.localStorage.setItem(
-                                    "prevData",
-                                    JSON.stringify(r)
-                                );
                                 return r;
                             });
                         }
@@ -78,11 +57,12 @@ function App() {
     }, []);
 
     useEffect(() => {
-        if (chName.current === "delete") {
-            window.localStorage.removeItem("prevData");
-            return;
-        }
         fetch("/start");
+        fetch(`/api/prev/${chName.current}`)
+            .then((d) => d.json())
+            .then((prevMatches) => {
+                setPrevData(prevMatches);
+            });
         fetchData();
         timer.current = setInterval(() => fetchData(), 6000);
 
@@ -97,16 +77,13 @@ function App() {
         <div className="App">
             {
                 <center>
-                    <h2>{chName.current || "plzGOTO: /web/<ChannleName>"}</h2>
+                    <h2>{chName.current || "plz GOTO: /web/<ChannelName>"}</h2>
                 </center>
             }
             {chName.current && (
                 <div id="main">
                     <MatchInfo matchData={matchData} />
                     <div style={{ marginBottom: 5 }}>
-                        {
-                            //Previous</br>
-                        }
                         <span
                             style={{ fontSize: "20px", fontWeight: "bolder" }}
                         >
