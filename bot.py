@@ -48,9 +48,9 @@ class Bot(commands.Bot):
 
     @ commands.command(name="help")
     async def onHelp(self, ctx):
-        await ctx.send("""`!coc reset | c[ancle]` Cancles current Lobby \n
+        await ctx.send("""`!coc reset | c[ancel]` Cancels current Lobby \n
                             `!coc` Create or Start Current lobby \n 
-                            `!coc f[ast[est]]]` Create match with Fastet Mode\n
+                            `!coc f[ast[est]]]` Create match with Fastest Mode\n
                             `!coc s[hort[est]]]` Create match with Shortest Mode\n
-                            `!coc r[evers]` Create match with Fastet Mode\n
+                            `!coc r[evers]` Create match with Reverse Mode\n
                             `!l[ink] gives link of current lobby`""")

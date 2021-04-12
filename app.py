@@ -246,7 +246,7 @@ def handle_onCoc(ctx):
         selectedModes = modes
     # create Private looby
     res = controller.createPrivateMatch(modes=selectedModes)
-    db.addNewMatch(res.split("/")[-1])
+    db.addNewMatch(chName, res.split("/")[-1])
     return res
 
 
