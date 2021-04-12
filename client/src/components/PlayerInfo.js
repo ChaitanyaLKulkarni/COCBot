@@ -17,8 +17,19 @@ function PlayerInfo({ playerData, index }) {
             }
         >
             <div>{playerData.language}</div>
-            <div>{playerData.name}</div>
-            <div>{duration}</div>
+            <div className="name">
+                <img
+                    className="avatar"
+                    src={
+                        playerData.avatarId
+                            ? `https://codingame.com/servlet/fileservlet?id=${playerData.avatarId}&format=profile_avatar`
+                            : "https://static-aznet.codingame.com/assets/img_general_avatar.35fdfed1.png"
+                    }
+                    alt="Avatar"
+                />
+                {playerData.name}
+            </div>
+            <div className="duration">{duration}</div>
         </div>
     );
 }

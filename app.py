@@ -2,7 +2,8 @@ import os
 import asyncio
 from threading import Thread
 from dotenv import load_dotenv
-from flask import Flask, jsonify, render_template
+from functools import wraps
+from flask import Flask, jsonify, request, make_response
 from flask_caching import Cache
 from bot import Bot
 import controller
@@ -16,7 +17,8 @@ BOT_PREFIX = os.environ.get('BOT_PREFIX')
 CHANNELS = os.environ.get('CHANNEL').split("\s")
 EMAIL = os.environ.get('EMAIL')
 PASSWORD = os.environ.get('PASSWORD')
-
+ADMIN_USER = os.environ.get('ADMIN_USER')
+ADMIN_PASSWORD = os.environ.get('ADMIN_PASS')
 
 app = Flask(__name__, static_folder="client/build", static_url_path='/')
 app.config['CACHE_TYPE'] = "SimpleCache"
@@ -27,6 +29,16 @@ currents = {}
 botThread = None
 isBotReady = False
 threadStarted = False
+
+
+def authorize(f):
+    @wraps(f)
+    def decorated_function(*args, **kws):
+        if request.authorization and request.authorization.username == ADMIN_USER and request.authorization.password == ADMIN_PASSWORD:
+            return f(*args, **kws)
+        else:
+            return make_response('Could not verify!', 401, {'WWW-Authenticate': 'Basic realm="Login Required"'})
+    return decorated_function
 
 
 @ app.route('/')
@@ -40,6 +52,11 @@ def getChannelView(channleName):
         return the template with the channel name
         in js store data locally
     """
+    return app.send_static_file('index.html')
+
+
+@app.route("/delete")
+def deleteLocal():
     return app.send_static_file('index.html')
 
 
@@ -64,9 +81,22 @@ def getReport(matchId=None):
     return jsonify({"status": 200 if report else 500, "message": report or "ERROR!!!"})
 
 
-@cache.memoize(timeout=5)
+@ cache.memoize(timeout=5)
 def getReportFromController(matchId):
     return controller.getReport(matchId)
+
+
+@app.route("/view")
+@authorize
+def viewCurrent():
+    return jsonify({"status": 200, "message": currents})
+
+
+@ app.route("/set/<channleName>/<matchId>")
+@authorize
+def setManual(channleName, matchId):
+    currents[channleName] = matchId
+    return jsonify({"status": 200, "message": currents})
 
 
 @ app.route("/api/<channleName>")
@@ -104,7 +134,8 @@ def getDetail(channleName):
             continue
 
         pInfo = {
-            "name": player['codingamerNickname']
+            "name": player['codingamerNickname'],
+            "avatarId": player.get('codingamerAvatarId', None)
         }
 
         if isStarted:

@@ -79,6 +79,10 @@ function App() {
     }, []);
 
     useEffect(() => {
+        if (chName.current === "delete") {
+            window.localStorage.removeItem("prevData");
+            return;
+        }
         fetch("/start");
         fetchData();
         timer.current = setInterval(() => fetchData(), 6000);

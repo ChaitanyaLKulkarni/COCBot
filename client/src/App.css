@@ -29,12 +29,16 @@ h2 {
     margin: 5px 0px;
     background-color: beige;
 }
-.player-info div:nth-child(2) {
+.player-info div.name {
+    font-size: 18px;
     font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
 }
-.player-info div:nth-child(3) {
+.player-info div.duration {
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 .match-info .player-info {
@@ -49,4 +53,12 @@ h2 {
 }
 .dark {
     background-color: moccasin;
+}
+.avatar {
+    display: inline-block;
+    position: absolute;
+    height: 35px;
+    width: auto;
+    margin-top: 0;
+    margin-left: -40px;
 }
