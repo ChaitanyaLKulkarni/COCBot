@@ -7,6 +7,7 @@ from flask import Flask, jsonify, request, make_response
 from flask_caching import Cache
 from bot import Bot
 from db import DB
+import time
 import controller
 
 load_dotenv("./.env")
@@ -153,8 +154,8 @@ def getDetail(channelName):
     """
     channelName = channelName.lower()
     info = db.getMatchInfo(channelName)
-    matchId = info.get("currentMatch")
-    if channelName == "" or not info or matchId == "":
+    matchId = "" if not info else info.get("currentMatch")
+    if channelName == "" or matchId == "":
         return jsonify({"status": 404, "message": "Not Found!!!"})
 
     report = getReportFromController(matchId)
@@ -254,6 +255,7 @@ def handle_onCoc(ctx):
         selectedModes = modes
     # create Private looby
     res = controller.createPrivateMatch(modes=selectedModes)
+    time.sleep(2)
     db.addNewMatch(chName, res.split("/")[-1])
     return res
 
@@ -289,5 +291,5 @@ def handleBot():
     # loop.create_task(bot.start())
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
