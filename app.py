@@ -256,8 +256,12 @@ def handle_onCoc(ctx):
     # create Private looby
     res = controller.createPrivateMatch(modes=selectedModes)
     time.sleep(2)
-    db.addNewMatch(chName, res.split("/")[-1])
-    return res
+    nmid = res.split("/")[-1]
+    rep = controller.getReport(nmid)
+    if len(rep["players"]) > 0:
+        db.addNewMatch(chName, res.split("/")[-1])
+        return res
+    return "Try Again"
 
 
 def handle_onLink(ctx):
@@ -291,5 +295,5 @@ def handleBot():
     # loop.create_task(bot.start())
 
 
-# if __name__ == "__main__":
-#     app.run()
+if __name__ == "__main__":
+    app.run()
