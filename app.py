@@ -224,7 +224,7 @@ def handle_onCoc(ctx):
 
             # Leave that match and Remove from DB
             controller.leaveCurrentClash(matchId)
-            db.cancleMatch(matchId)
+            db.cancleMatch(chName)
 
             return "Current Clashed Cancled!!! "
 
