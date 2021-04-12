@@ -135,9 +135,11 @@ def getPrev(channelName):
     if not info:
         return jsonify([])
     op = []
-    for p in info.get('prevMatches'):
-        m = controller.getReport(p)
-        o = {"matchId": p, "winner": m['players'][0]}
+    for match in info.get('prevMatches'):
+        m = controller.getReport(match)
+        w = m['players'][0]
+        o = {"matchId": match, "winner": {
+            "rank": w['rank'], "duration": w["duration"], "language": w["languageId"]}}
         op.append(o)
     return jsonify(op)
 
