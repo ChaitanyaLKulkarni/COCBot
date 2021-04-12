@@ -134,8 +134,12 @@ def getPrev(channelName):
     info = db.getMatchInfo(channelName)
     if not info:
         return jsonify([])
-
-    return jsonify(info.get("prevMatches"))
+    op = []
+    for p in info.get('prevMatches'):
+        m = controller.getReport(p)
+        o = {"matchId": p, "winner": m['players'][0]}
+        op.append(o)
+    return jsonify(op)
 
 
 @ app.route("/api/<channelName>")
