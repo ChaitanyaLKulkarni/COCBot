@@ -273,7 +273,7 @@ def handle_onLink(ctx):
     Returns:
         str | None: link of current match
     """
-    return controller.getCurrentClash(db.getMatchInfo(ctx.channel.name))
+    return controller.getCurrentClash(db.getMatchInfo(ctx.channel.name.lower()))
 
 
 def handle_onAddCommand(channelName, command, response):
