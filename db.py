@@ -8,7 +8,7 @@ class DB:
             f"mongodb+srv://{username}:{password}@cluster0.lduex.mongodb.net/{database}?retryWrites=true&w=majority")
         self.db = client[database]
         self.matches = self.db['matches']
-        self.commands = self.db['commads']
+        self.commands = self.db['commands']
 
     def getAll(self):
         op = []
@@ -61,3 +61,19 @@ class DB:
             self.matches.update_one({"_id": channelName}, {"$set": {
                                     "currentMatch": ""}})
             print("Cancled")
+
+    def getAllCommands(self):
+        op = {}
+        for channel in self.commands.find({}):
+            print(channel)
+            chId = channel["_id"]
+            del channel["_id"]
+            op[chId] = channel
+        return op
+
+    def addNewCommand(self, channelName, command, response):
+        return self.commands.update_one({"_id": channelName}, {
+            "$set": {command: response}}, upsert=True).modified_count
+
+    def removeCommand(self, channelName, command):
+        return self.commands.update_one({"_id": channelName}, {"$unset": {command: ""}}).modified_count

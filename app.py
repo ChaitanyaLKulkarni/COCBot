@@ -59,7 +59,7 @@ def getChannelView(channelName):
     return app.send_static_file('index.html')
 
 
-@ app.route('/start')
+# @ app.route('/start')
 def startBot():
     """Start the TwitchIo bot and LogInto Codingame
 
@@ -68,14 +68,14 @@ def startBot():
     """
     global botThread
     if botThread is not None and isBotReady:
-        return jsonify({"status": 200, "message": "Bot Running."})
+        return {"status": 200, "message": "Bot Running."}
 
     if botThread is None and not threadStarted:
         botThread = Thread(target=handleBot, daemon=True)
         botThread.start()
         controller.login(EMAIL, PASSWORD)
 
-    return jsonify({"status": 202, "message": "Starting bot..."})
+    return {"status": 202, "message": "Starting bot..."}
 
 
 @ app.route("/api/report/<matchId>")  # Show Specific
@@ -276,6 +276,14 @@ def handle_onLink(ctx):
     return controller.getCurrentClash(db.getMatchInfo(ctx.channel.name))
 
 
+def handle_onAddCommand(channelName, command, response):
+    db.addNewCommand(channelName, command, response)
+
+
+def handle_onRemoveCommand(channelName, command):
+    db.removeCommand(channelName, command)
+
+
 def handleBot():
     """Handles the bot starting procedure
     """
@@ -286,14 +294,18 @@ def handleBot():
     # create new async Loop for boot
     asyncio.set_event_loop(asyncio.new_event_loop())
     # loop = asyncio.get_event_loop()
-    bot = Bot(TMI_TOKEN, CLIENT_ID, BOT_NICK, BOT_PREFIX, CHANNELS)
+    bot = Bot(TMI_TOKEN, CLIENT_ID, BOT_NICK, BOT_PREFIX,
+              CHANNELS, db.getAllCommands())
     bot.on_ready = handle_onBotReady
     bot.on_coc = handle_onCoc
     bot.on_link = handle_onLink
+    bot.on_addCommand = handle_onAddCommand
+    bot.on_removeCommand = handle_onRemoveCommand
     threadStarted = True
     bot.run()
     # loop.create_task(bot.start())
 
 
 if __name__ == "__main__":
+    startBot()
     app.run()

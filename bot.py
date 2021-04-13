@@ -3,7 +3,7 @@ from twitchio.ext import commands
 
 class Bot(commands.Bot):
 
-    def __init__(self, tmi_token, client_id, nick, prefix, channel):
+    def __init__(self, tmi_token, client_id, nick, prefix, channel, comms):
         """Create a Twitchio bot with given parameters
 
         Args:
@@ -22,6 +22,8 @@ class Bot(commands.Bot):
         self.on_coc = None
         self.on_link = None
         self.on_ready = None
+        self.on_addCommand = None
+        self.comms = comms
 
     async def event_ready(self):
         """Event invoked when bot is ready and listening to messages from specified channels"""
@@ -29,6 +31,49 @@ class Bot(commands.Bot):
 
         if self.on_ready is not None:
             self.on_ready()
+
+    async def event_command_error(self, ctx, err):
+        com = ctx.message.content.split(" ")[0][1:].lower()
+        chName = ctx.channel.name.lower()
+        op = self.comms.get(chName, {}).get(com)
+        if op:
+            await ctx.send(op)
+
+    @ commands.command(name='add', aliases=['set'])
+    async def addCommand(self, ctx):
+        if not ctx.author.is_mod:
+            return
+        chName = ctx.channel.name.lower()
+        if chName not in self.comms:
+            self.comms[chName] = {}
+        msg = ctx.message.content.split(" ")
+        if len(msg) < 3:
+            await ctx.send("Wrong! Usage: !add <command> <response>")
+            return
+
+        _, com, *op = msg
+        com = com.lower()
+        op = " ".join(op)
+        self.comms[chName][com] = op
+        if self.on_addCommand:
+            self.on_addCommand(chName, com, op)
+        await ctx.send("Successfully added command: "+com)
+
+    @ commands.command(name='remove', aliases=['reset'])
+    async def removeCommand(self, ctx):
+        if not ctx.author.is_mod:
+            return
+        chName = ctx.channel.name.lower()
+        com = ctx.message.content.split(" ")[1]
+        com = com.lower()
+        if chName not in self.comms or com not in self.comms.get(chName, {}):
+            await ctx.send("No Command Found to remove!")
+            return
+
+        del self.comms[chName]
+        if self.on_removeCommand:
+            self.on_removeCommand(chName, com)
+        await ctx.send("Successfully removed command: "+com)
 
     @ commands.command(name='coc')
     async def my_command(self, ctx):
@@ -48,9 +93,14 @@ class Bot(commands.Bot):
 
     @ commands.command(name="help")
     async def onHelp(self, ctx):
-        await ctx.send("""`!coc reset | c[ancel]` Cancels current Lobby \n
-                            `!coc` Create or Start Current lobby \n 
-                            `!coc f[ast[est]]]` Create match with Fastest Mode\n
-                            `!coc s[hort[est]]]` Create match with Shortest Mode\n
-                            `!coc r[evers]` Create match with Reverse Mode\n
-                            `!l[ink] gives link of current lobby`""")
+        modCommands = """Manage Commands: || 
+                        !add | !set <command> <response> : After that !<command> will send back <response> || 
+                        !remove | !reset <command> : deletes the <command>"""
+
+        if ctx.author.is_mod:
+            await ctx.send(modCommands)
+        op = """COC Bot: !coc : reset | c[ancel] Cancels current Lobby || 
+                !coc : Create new lobby, optional parameters to set Mode: f[astest] s[hortest] r[everse] || 
+                !coc : Start current lobby if any and has not been Started || 
+                !l[ink] : gives link of current lobby """
+        await ctx.send(op)
