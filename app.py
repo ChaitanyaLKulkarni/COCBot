@@ -59,7 +59,6 @@ def getChannelView(channelName):
     return app.send_static_file('index.html')
 
 
-# @ app.route('/start')
 def startBot():
     """Start the TwitchIo bot and LogInto Codingame
 

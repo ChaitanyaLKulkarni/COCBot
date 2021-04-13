@@ -57,7 +57,6 @@ function App() {
     }, []);
 
     useEffect(() => {
-        fetch("/start");
         fetch(`/api/prev/${chName.current}`)
             .then((d) => d.json())
             .then((prevMatches) => {
