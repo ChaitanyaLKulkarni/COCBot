@@ -8,9 +8,9 @@ function PlayerInfo({ playerData, index }) {
     ).slice(-2)}s`;
     const language = playerData.language
         .toLowerCase()
-        .replaceAll("+", "plus")
-        .replaceAll("#", "sharp")
-        .replaceAll(/[0-9]|-/g, "");
+        .replace(/\+/g, "plus")
+        .replace("#", "sharp")
+        .replace(/[0-9]|-/g, "");
     return (
         <div
             className={
