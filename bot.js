@@ -3,7 +3,7 @@ const tmi = require("tmi.js");
 const prefix = process.env.BOT_PREFIX;
 
 const client = new tmi.Client({
-    options: { debug: true, messagesLogLevel: "info" },
+    options: {},
     connection: {
         reconnect: true,
         secure: true,
