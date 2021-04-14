@@ -1,7 +1,0 @@
-twitchio
-python-dotenv
-gunicorn
-flask
-Flask-Caching
-requests
-pymongo[srv]
