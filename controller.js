@@ -121,16 +121,60 @@ class Controller {
             }
         }
         const modes = ["FASTEST", "SHORTEST", "REVERSE"];
-        let selectedModes = [...modes];
-        if (opts.length == 1) {
-            if (["f", "fast", "fastest"].includes(opts[0]))
-                selectedModes = [modes[0]];
-            else if (["s", "short", "shortest"].includes(opts[0]))
-                selectedModes = [modes[1]];
-            else if (["r", "reverse"].includes(opts[0]))
-                selectedModes = [modes[2]];
+        let selectedModes = [];
+        let languages = [
+            "Bash",
+            "VB.NET",
+            "C++",
+            "C#",
+            "C",
+            "Clojure",
+            "D",
+            "Dart",
+            "F#",
+            "Go",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "Javascript",
+            "Kotlin",
+            "Lua",
+            "ObjectiveC",
+            "OCaml",
+            "Pascal",
+            "Perl",
+            "PHP",
+            "Python3",
+            "Ruby",
+            "Rust",
+            "Scala",
+            "Swift",
+            "TypeScript",
+        ];
+        let selectedLang = [];
+
+        if (opts.length > 0) {
+            for (const opt of opts) {
+                //Check for Mode
+                if (["f", "fast", "fastest"].includes(opt)) {
+                    selectedModes.push("FASTEST");
+                } else if (["s", "short", "shortest"].includes(opt)) {
+                    selectedModes.push("SHORTEST");
+                } else if (["r", "reverse"].includes(opt)) {
+                    selectedModes.push("REVERSE");
+                } else {
+                    for (const lang of languages) {
+                        if (lang.toLowerCase() === opt.toLowerCase()) {
+                            selectedLang.push(lang);
+                            break;
+                        }
+                    }
+                }
+            }
         }
-        const res = await this.createPrivateMatch(selectedModes);
+        if (selectedModes.length === 0) selectedModes = [...modes];
+        else selectedModes = [...new Set(selectedModes)]; //Gets unique only
+        const res = await this.createPrivateMatch(selectedModes, selectedLang);
         const newMatchId = res.split("/").slice(-1)[0];
         const op = await this.db.addMatch(channelName, newMatchId);
         return res;
