@@ -44,7 +44,7 @@ function PlayerInfo({ playerData, index }) {
                 {playerData.name}
             </div>
             <div className="duration">{`${
-                playerData.criterion || "N/A"
+                playerData.criterion || "N/A "
             } | ${duration}`}</div>
         </div>
     );
