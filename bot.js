@@ -52,7 +52,7 @@ client.on("message", async (channel, user, message, self) => {
             break;
         case "help":
             op = client.on_helpCmd(channel, opts, isMod);
-            for (let o in op) {
+            for (let o of op) {
                 await client.say(o);
             }
             return;
