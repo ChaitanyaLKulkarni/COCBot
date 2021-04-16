@@ -193,20 +193,18 @@ class Controller {
     onHelpCmd(channelName, opts, isMod) {
         const op = [];
         if (isMod) {
-            op.pust(
+            op.push(
                 "Manage Commands:|| !add | !set <command> <response> : After that !<command> will send back <response> ||    !remove | !reset <command> : deletes the <command></command>"
             );
         }
         op.push(
-            "COC Bot:  !coc : reset | c[ancel] Cancels current Lobby ||   \
-                !coc : Create new lobby, optional parameters to set Mode: f[astest] s[hortest] r[everse] ||  \
-                !coc : Start current lobby if any and has not been Started ||  \
-                !l[ink] : gives link of current lobby"
+            "COC Bot:  !coc : reset | c[ancel] Cancels current Lobby ||   !coc : Create new lobby, optional parameters to set Mode: f[astest] s[hortest] r[everse] ||  !coc : Start current lobby if any and has not been Started ||  !l[ink] : gives link of current lobby"
         );
-        const cust = Object.keys(this.commands[channelName]).reduce(
-            (p, a) => p + "   ||   " + a
+        const cust = Object.keys(this.commands[channelName] || {}).reduce(
+            (p, a) => p + "   ||   !" + a,
+            ""
         );
-        op.push("Other Commands: " + cust);
+        if (cust) op.push("Other Commands: " + cust);
         return op;
     }
 

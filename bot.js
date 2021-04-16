@@ -52,8 +52,9 @@ client.on("message", async (channel, user, message, self) => {
             break;
         case "help":
             op = client.on_helpCmd(channel, opts, isMod);
-            for (let o of op) {
-                await client.say(o);
+            for (const o of op) {
+                if (!o) continue;
+                await client.say(channel, o);
             }
             return;
         default:
