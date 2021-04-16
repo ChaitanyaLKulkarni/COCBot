@@ -53,7 +53,7 @@ client.on("message", async (channel, user, message, self) => {
         case "help":
             op = client.on_helpCmd(channel, opts, isMode);
             for (let o in op) {
-                client.say(o);
+                await client.say(o);
             }
             return;
         default:
