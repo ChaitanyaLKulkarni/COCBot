@@ -51,7 +51,7 @@ client.on("message", async (channel, user, message, self) => {
             op = await client.on_removeCmd(channel, opts, isMod);
             break;
         case "help":
-            op = client.on_helpCmd(channel, opts, isMode);
+            op = client.on_helpCmd(channel, opts, isMod);
             for (let o in op) {
                 await client.say(o);
             }
