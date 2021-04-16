@@ -25,6 +25,7 @@ class Controller {
         bot.on_addCmd = this.onAddCmd.bind(this);
         bot.on_removeCmd = this.onRemoveCmd.bind(this);
         bot.on_elseCmd = this.onElseCmd.bind(this);
+        bot.on_helpCmd = this.onHelpCmd.bind(this);
     }
     login() {
         axios
@@ -184,7 +185,29 @@ class Controller {
         const op = await this.db.getChannelMatches(channelName);
         const matchId = op ? op.currentMatch : "";
         if (!matchId) return "No Clash Running!";
-        return `Join Clash: https://www.codingame.com/clashofcode/clash/${matchId}`;
+        return `Join Clash: https://www.codingame.com/clashofcode/clash/${matchId}  ${Math.floor(
+            Math.random() * 10
+        )}`;
+    }
+
+    onHelpCmd(channelName, opts, isMod) {
+        const op = [];
+        if (isMod) {
+            op.pust(
+                "Manage Commands:|| !add | !set <command> <response> : After that !<command> will send back <response> ||    !remove | !reset <command> : deletes the <command></command>"
+            );
+        }
+        op.push(
+            "COC Bot:  !coc : reset | c[ancel] Cancels current Lobby ||   \
+                !coc : Create new lobby, optional parameters to set Mode: f[astest] s[hortest] r[everse] ||  \
+                !coc : Start current lobby if any and has not been Started ||  \
+                !l[ink] : gives link of current lobby"
+        );
+        const cust = Object.keys(this.commands[channelName]).reduce(
+            (p, a) => p + "   ||   " + a
+        );
+        op.push("Other Commands: " + cust);
+        return;
     }
 
     async onAddCmd(channelName, opts, isMod) {

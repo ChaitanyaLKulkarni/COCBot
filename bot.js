@@ -50,7 +50,12 @@ client.on("message", async (channel, user, message, self) => {
         case "reset":
             op = await client.on_removeCmd(channel, opts, isMod);
             break;
-
+        case "help":
+            op = client.on_helpCmd(channel, opts, isMode);
+            for (let o in op) {
+                client.say(o);
+            }
+            return;
         default:
             op = await client.on_elseCmd(channel, cmd, isMod);
     }
