@@ -207,7 +207,7 @@ class Controller {
             (p, a) => p + "   ||   " + a
         );
         op.push("Other Commands: " + cust);
-        return;
+        return op;
     }
 
     async onAddCmd(channelName, opts, isMod) {
