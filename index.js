@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const Ctr = new require("./controller");
 const app = express();
-
+const fs = require("fs");
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const controller = new Ctr();
 app.use(express.static(__dirname + "/client/build"));
 
@@ -124,5 +125,29 @@ app.get("/set/:channelName/:matchId", async (req, res) => {
         req.params.matchId,
         true
     );
+});
+
+app.get("/create/:channelName", async (req, res) => {
+    const channelName = req.params.channelName.toLowerCase();
+    const op = await controller.db.getChannelMatches(channelName);
+    if (!op) {
+        res.json([]);
+        return;
+    }
+    let i = 0;
+    const proms = [];
+    for (const match of op.prevMatches) {
+        proms.push(controller.getMatchReport(match));
+    }
+    const jsonOp = await Promise.all(proms);
+    fs.writeFileSync(
+        __dirname + "/data/prevMatches.json",
+        JSON.stringify(jsonOp, null, 2)
+    );
+    fs.writeFileSync(
+        __dirname + "/data/prevMatches.min.json",
+        JSON.stringify(jsonOp)
+    );
+    res.json(jsonOp);
 });
 app.listen(process.env.PORT || 5000, () => console.log("Server is running..."));
