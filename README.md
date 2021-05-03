@@ -12,8 +12,8 @@
 
 ## Needed Tools
 
-    - [React Charts](https://www.npmjs.com/package/react-charts)
-    - [Axios](https://www.npmjs.com/package/axios)
+-   [React Charts](https://www.npmjs.com/package/react-charts)
+-   [Axios](https://www.npmjs.com/package/axios)
 
 ## Plan
 
