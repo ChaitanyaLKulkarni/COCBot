@@ -139,15 +139,40 @@ app.get("/create/:channelName", async (req, res) => {
     for (const match of op.prevMatches) {
         proms.push(controller.getMatchReport(match));
     }
+    const ret = [];
     const jsonOp = await Promise.all(proms);
+    for (const match of jsonOp) {
+        const matchObj = {
+            matchId: match.publicHandle,
+            mode: match.mode,
+            startTime: match.startTime,
+            endTime: match.endTime,
+            players: [],
+        };
+        for (const player of match.players) {
+            if (player.codingamerId === 4265340) continue;
+            const pObj = {
+                playerId: player.codingamerId,
+                name: player.codingamerNickname,
+                handle: player.condingamerHandle,
+                avatarId: player.codingamerAvatarId,
+                score: player.score,
+                rank: player.rank,
+                language: player.languageId,
+                criterion: player.criterion,
+            };
+            matchObj.players.push(pObj);
+        }
+        ret.push(matchObj);
+    }
     fs.writeFileSync(
         __dirname + "/data/prevMatches.json",
-        JSON.stringify(jsonOp, null, 2)
+        JSON.stringify(ret, null, 2)
     );
     fs.writeFileSync(
         __dirname + "/data/prevMatches.min.json",
-        JSON.stringify(jsonOp)
+        JSON.stringify(ret)
     );
-    res.json(jsonOp);
+    res.json(ret);
 });
 app.listen(process.env.PORT || 5000, () => console.log("Server is running..."));

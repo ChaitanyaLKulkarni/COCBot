@@ -1,10 +1,10 @@
 # TODO:
 
 -   [ ] Visualizer
-    -   [ ] Get Data From COC
-    -   [ ] Formate Data
-        -   [ ] Get only relatale
-    -   [ ] Save minified and normal version
+    -   [x] Get Data From COC
+    -   [x] Formate Data
+        -   [x] Get only relatale
+    -   [x] Save minified and normal version
     -   [ ] Give data to react client and let them process it
         -   _Given only needed data so will be fine for_
 
