@@ -12,7 +12,7 @@
 
 ## Needed Tools
 
--   [React Charts](https://www.npmjs.com/package/react-charts)
+-   [Recharts](https://www.npmjs.com/package/recharts)
 -   [Axios](https://www.npmjs.com/package/axios)
 
 ## Plan
@@ -33,7 +33,7 @@
     - Left: Horizontal Bar with all languages
     - Right: Top Three languages
 
-4. Consistency Players:
+4. Consistency Players(NOT SURE):
 
     - Left: Top Three consitance players (Calculate ?)
     - Right: Summary Maybe?
