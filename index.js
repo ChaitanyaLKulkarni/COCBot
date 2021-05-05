@@ -162,7 +162,7 @@ app.get("/create/:channelName", async (req, res) => {
         sTotal: 0,
         rTotal: 0,
         players: [],
-        languages: {},
+        languages: [],
     };
     for (const match of jsonOp) {
         ret.total++;
@@ -204,7 +204,7 @@ app.get("/create/:channelName", async (req, res) => {
                     fTotal: 0,
                     rTotal: 0,
                     sTotal: 0,
-                    languages: {},
+                    languages: [],
                     won: 0,
                     fWon: 0,
                     rWon: 0,
@@ -229,15 +229,30 @@ app.get("/create/:channelName", async (req, res) => {
                 if (p.rank === 1) pl.sWon++;
             }
             if (p.rank === 1) pl.won++;
-            if (!p.language) continue;
+            if (p.language === "undefined" || p.language === null) continue;
 
-            //Add Language
-            if (!(p.language in pl.languages)) pl.languages[p.language] = 0;
+            // Add Language
+            // TODO: Improve Performance :
+            // Use Dictionary and parse it to array at the end making complexcity O(2n) rather than O(n^2)
+            let lanIndex = pl.languages.findIndex((v) => v.name === p.language);
+            if (lanIndex === -1) {
+                lanIndex = pl.languages.push({ name: p.language, used: 0 });
+                lanIndex--;
+            }
+            pl.languages[lanIndex].used++;
 
-            if (!(p.language in ret.languages)) ret.languages[p.language] = 0;
-
-            pl.languages[p.language]++;
-            ret.languages[p.language]++;
+            // Global languages
+            let glanIndex = ret.languages.findIndex(
+                (v) => v.name === p.language
+            );
+            if (glanIndex === -1) {
+                glanIndex = ret.languages.push({
+                    name: p.language,
+                    used: 0,
+                });
+                glanIndex--;
+            }
+            ret.languages[glanIndex].used++;
         }
     }
     console.timeEnd("create");

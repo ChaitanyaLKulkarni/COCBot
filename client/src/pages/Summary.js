@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import P1Summary from "../components/P1Summary";
 import P2TopPlayers from "../components/P2TopPlayers";
+import P3LangSummary from "../components/P3LangSummary";
+import P4ConsPlayers from "../components/P4ConsPlayers";
+
+import "../css/summary.css";
 export default function Summary(props) {
     const [data, setData] = useState(null);
 
@@ -19,13 +23,15 @@ export default function Summary(props) {
     }, [props.match.params.channelName]);
 
     return (
-        <div>
+        <>
             {data && (
-                <div>
+                <div className="main">
                     <P1Summary data={data} />
                     <P2TopPlayers data={data} />
+                    <P3LangSummary data={data} />
+                    <P4ConsPlayers data={data} />
                 </div>
             )}
-        </div>
+        </>
     );
 }

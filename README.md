@@ -36,7 +36,9 @@
 4. Consistency Players(NOT SURE):
 
     - Left: Top Three consitance players (Calculate ?)
+        - Most played players
     - Right: Summary Maybe?
+        - Mode wise most played players
 
 5. Player wise summary:
     - Choose player
