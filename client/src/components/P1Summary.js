@@ -9,9 +9,13 @@ export default function P1Summary({ data }) {
     ];
     return (
         <div className="container">
-            <div className="left">Total Matches: {data.total}</div>
-            Summary:
+            <div className="left">
+                <div className="sub-heading">Total</div>
+                Total Matches:{data.total}
+            </div>
+            <div className="heading">Summary:</div>
             <div className="right">
+                <div className="sub-heading">Mode wise matches:</div>
                 <PieChart width={700} height={400} margin={{ top: 100 }}>
                     <Pie
                         data={pieData}

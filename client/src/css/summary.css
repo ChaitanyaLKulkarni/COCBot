@@ -1,29 +1,28 @@
 .main {
-    position: relative;
     scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-width: 0px;
 }
 .container {
     display: flex;
     justify-content: space-between;
     height: 80vh;
-    width: 80vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 5vw;
+    width: 90vw;
+    padding: 10vh 5vw;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
 }
 .heading {
     position: relative;
+    top: -8vh;
     font-size: 1.2rem;
     font-weight: 600;
 }
 .sub-heading {
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     font-size: 1.1rem;
     font-weight: 500;
+    word-break: keep-all;
 }

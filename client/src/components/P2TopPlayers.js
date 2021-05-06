@@ -25,7 +25,7 @@ export default function P2TopPlayers({ data }) {
     return (
         <div className="container">
             <div className="left">
-                Total Matches Won:
+                <div className="sub-heading">Total Matches Won:</div>
                 <BarChart
                     width={300}
                     height={450}
@@ -45,9 +45,9 @@ export default function P2TopPlayers({ data }) {
                     </Bar>
                 </BarChart>
             </div>
-            Top Three Players
+            <div className="heading">Top Three Players</div>
             <div className="right">
-                <span style={{ marginLeft: 60 }}>Mode wise Matches Won:</span>
+                <div className="sub-heading">Mode wise Matches Won:</div>
                 <BarChart
                     width={700}
                     height={500}
