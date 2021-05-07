@@ -1,12 +1,22 @@
 # TODO:
 
 -   [ ] Visualizer
+
     -   [x] Get Data From COC
     -   [x] Formate Data
         -   [x] Get only relatale
     -   [x] Save minified and normal version
-    -   [ ] Give data to react client and let them process it
+    -   [x] Give data to react client and let them process it
+
         -   _Given only needed data so will be fine for_
+
+    -   [ ] Pages:
+        -   [x] Page 1 Summary
+        -   [x] Page 2 Top Players
+        -   [x] Page 3 Language Summary
+        -   [ ] Page 4 Most played Players
+        -   [ ] Page 5 Player wise Summary
+    -   [ ] Add Parllax Scrolling with nice background
 
 ---
 
