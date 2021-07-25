@@ -1,0 +1,28 @@
+.main {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 90vw;
+    padding: 10vh 5vw;
+    scroll-snap-align: start;
+}
+.heading {
+    position: relative;
+    top: -8vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.sub-heading {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    word-break: keep-all;
+}

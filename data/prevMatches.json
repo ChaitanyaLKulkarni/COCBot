@@ -1,0 +1,6275 @@
+{
+  "total": 147,
+  "fTotal": 58,
+  "sTotal": 62,
+  "rTotal": 27,
+  "players": [
+    {
+      "playerId": 173928,
+      "name": "lacrosse",
+      "avatarId": 49137985463837,
+      "handle": "c17d93ad84b0727248b050dd122125f6829371",
+      "total": 13,
+      "fTotal": 5,
+      "rTotal": 1,
+      "sTotal": 7,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 11
+        },
+        {
+          "name": "OCaml",
+          "used": 1
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        }
+      ],
+      "won": 5,
+      "fWon": 4,
+      "rWon": 0,
+      "sWon": 1,
+      "ranks": {
+        "fastest": [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "reverse": [
+          2
+        ],
+        "shortest": [
+          1,
+          12,
+          4,
+          3,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "playerId": 3397479,
+      "name": "XorZy",
+      "avatarId": 55410905147006,
+      "handle": "a5c4d01d2649b6068568fbd6b7a72ffa9747933",
+      "total": 145,
+      "fTotal": 56,
+      "rTotal": 27,
+      "sTotal": 62,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 142
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        },
+        {
+          "name": "Bash",
+          "used": 2
+        }
+      ],
+      "won": 45,
+      "fWon": 16,
+      "rWon": 4,
+      "sWon": 25,
+      "ranks": {
+        "fastest": [
+          5,
+          2,
+          3,
+          3,
+          1,
+          7,
+          1,
+          1,
+          9,
+          1,
+          2,
+          2,
+          2,
+          1,
+          5,
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          1,
+          2,
+          3,
+          2,
+          5,
+          1,
+          3,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          6,
+          3,
+          3,
+          3,
+          4,
+          6,
+          1,
+          1,
+          10,
+          7,
+          3,
+          7,
+          2
+        ],
+        "reverse": [
+          4,
+          3,
+          6,
+          8,
+          3,
+          5,
+          3,
+          2,
+          4,
+          1,
+          11,
+          1,
+          1,
+          2,
+          1,
+          2,
+          5,
+          4,
+          2,
+          6,
+          3,
+          2,
+          19,
+          5,
+          2,
+          9,
+          6
+        ],
+        "shortest": [
+          2,
+          3,
+          1,
+          12,
+          3,
+          5,
+          5,
+          6,
+          2,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          4,
+          3,
+          4,
+          2,
+          1,
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          5,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          9,
+          3,
+          4,
+          4,
+          4,
+          6,
+          2,
+          6,
+          3,
+          1,
+          3,
+          2,
+          1,
+          9,
+          1,
+          2,
+          4,
+          1,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 4155965,
+      "name": "Irratix",
+      "handle": "2f65f862264c4657a0b012e596ca8f555695514",
+      "total": 23,
+      "fTotal": 11,
+      "rTotal": 1,
+      "sTotal": 11,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 23
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 1,
+      "ranks": {
+        "fastest": [
+          9,
+          5,
+          5,
+          7,
+          5,
+          8,
+          3,
+          8,
+          4,
+          3,
+          7
+        ],
+        "reverse": [
+          7
+        ],
+        "shortest": [
+          3,
+          4,
+          8,
+          1,
+          8,
+          7,
+          16,
+          13,
+          4,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 4134816,
+      "name": "-oa-",
+      "avatarId": 57367129933542,
+      "handle": "bab2607660d6ec9645bd15dd87cc0f266184314",
+      "total": 7,
+      "fTotal": 1,
+      "rTotal": 2,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 7
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          3
+        ],
+        "reverse": [
+          5,
+          1
+        ],
+        "shortest": [
+          4,
+          4,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 4172516,
+      "name": "saltAxAtlas",
+      "avatarId": 58629965860707,
+      "handle": "68ba0571bc80e569452619e7fe0826f16152714",
+      "total": 147,
+      "fTotal": 58,
+      "rTotal": 27,
+      "sTotal": 62,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 131
+        },
+        {
+          "name": "C",
+          "used": 12
+        },
+        {
+          "name": "C++",
+          "used": 4
+        }
+      ],
+      "won": 4,
+      "fWon": 3,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11,
+          6,
+          13,
+          5,
+          11,
+          4,
+          7,
+          4,
+          11,
+          5,
+          5,
+          1,
+          1,
+          9,
+          2,
+          4,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          2,
+          7,
+          8,
+          9,
+          4,
+          13,
+          9,
+          3,
+          4,
+          8,
+          8,
+          9,
+          7,
+          7,
+          3,
+          4,
+          5,
+          4,
+          5,
+          5,
+          3,
+          7,
+          3,
+          1,
+          4,
+          7,
+          5,
+          3,
+          9,
+          4,
+          13,
+          8,
+          2,
+          15,
+          2,
+          5
+        ],
+        "reverse": [
+          6,
+          6,
+          1,
+          2,
+          4,
+          2,
+          4,
+          4,
+          3,
+          10,
+          4,
+          5,
+          4,
+          7,
+          8,
+          6,
+          5,
+          2,
+          5,
+          5,
+          10,
+          11,
+          5,
+          4,
+          7,
+          8,
+          4
+        ],
+        "shortest": [
+          5,
+          6,
+          7,
+          9,
+          10,
+          7,
+          7,
+          15,
+          19,
+          7,
+          7,
+          6,
+          10,
+          7,
+          6,
+          6,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          8,
+          8,
+          9,
+          7,
+          8,
+          8,
+          8,
+          8,
+          12,
+          15,
+          10,
+          5,
+          8,
+          7,
+          6,
+          5,
+          8,
+          5,
+          7,
+          6,
+          9,
+          10,
+          6,
+          5,
+          2,
+          12,
+          12,
+          8,
+          8,
+          10,
+          11,
+          12,
+          9,
+          4,
+          5,
+          9,
+          7,
+          9,
+          6,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4245692,
+      "name": "vikas_chandak",
+      "handle": "14e86e33a3b45371dfae699fb6b0278e2965424",
+      "total": 21,
+      "fTotal": 7,
+      "rTotal": 2,
+      "sTotal": 12,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 21
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          5,
+          4,
+          4,
+          7,
+          8,
+          11
+        ],
+        "reverse": [
+          3,
+          3
+        ],
+        "shortest": [
+          6,
+          10,
+          7,
+          9,
+          8,
+          13,
+          9,
+          6,
+          3,
+          2,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 1930388,
+      "name": "UrbanWhale",
+      "avatarId": 44494746710672,
+      "handle": "77b443e431b1e4d79f04800d1aeeb1688830391",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 806416,
+      "name": "awnion",
+      "avatarId": 59791745647170,
+      "handle": "f2ced6661d4fc3294d63e13717b870dd614608",
+      "total": 75,
+      "fTotal": 24,
+      "rTotal": 13,
+      "sTotal": 38,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 42
+        },
+        {
+          "name": "Bash",
+          "used": 15
+        },
+        {
+          "name": "Python3",
+          "used": 10
+        },
+        {
+          "name": "Perl",
+          "used": 2
+        },
+        {
+          "name": "PHP",
+          "used": 2
+        },
+        {
+          "name": "Haskell",
+          "used": 1
+        },
+        {
+          "name": "Javascript",
+          "used": 3
+        }
+      ],
+      "won": 14,
+      "fWon": 1,
+      "rWon": 0,
+      "sWon": 13,
+      "ranks": {
+        "fastest": [
+          8,
+          6,
+          9,
+          3,
+          10,
+          8,
+          11,
+          1,
+          4,
+          2,
+          7,
+          9,
+          6,
+          6,
+          6,
+          4,
+          10,
+          9,
+          10,
+          6,
+          2,
+          14,
+          3,
+          9
+        ],
+        "reverse": [
+          6,
+          9,
+          11,
+          9,
+          5,
+          5,
+          4,
+          2,
+          12,
+          12,
+          15,
+          11,
+          2
+        ],
+        "shortest": [
+          8,
+          1,
+          5,
+          2,
+          1,
+          1,
+          13,
+          8,
+          2,
+          3,
+          1,
+          2,
+          4,
+          9,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          4,
+          3,
+          5,
+          1,
+          2,
+          1,
+          10,
+          6,
+          8,
+          1,
+          6,
+          5,
+          1,
+          5,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "playerId": 1155433,
+      "name": "mdexp",
+      "handle": "d7a73aa122c3cf024c9e0ca2a08f22883345511",
+      "total": 16,
+      "fTotal": 6,
+      "rTotal": 1,
+      "sTotal": 9,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 16
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          8,
+          9,
+          9,
+          7,
+          13
+        ],
+        "reverse": [
+          8
+        ],
+        "shortest": [
+          9,
+          5,
+          12,
+          10,
+          12,
+          15,
+          11,
+          11,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 3867381,
+      "name": "Vorex",
+      "handle": "553f9d2c163f90409dba11b33add9dbe1837683",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 4146687,
+      "name": "somebuggy",
+      "avatarId": 62657803902661,
+      "handle": "b98a4d7094fb4aa4b17eb9f81594f8897866414",
+      "total": 3,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          11,
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 3468746,
+      "name": "NiceCoder",
+      "avatarId": 38219702743959,
+      "handle": "59d3ab076e866f21eb1125ac75597dad6478643",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          12,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4183296,
+      "name": "Builderboy426",
+      "avatarId": 58757866112226,
+      "handle": "aa15514b64f6aee3d71042d694b4a7fc6923814",
+      "total": 48,
+      "fTotal": 14,
+      "rTotal": 7,
+      "sTotal": 27,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 42
+        },
+        {
+          "name": "Python3",
+          "used": 6
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          9,
+          4,
+          8,
+          8,
+          9,
+          10,
+          9,
+          8,
+          6,
+          6,
+          8,
+          11,
+          5
+        ],
+        "reverse": [
+          8,
+          6,
+          8,
+          8,
+          10,
+          8,
+          5
+        ],
+        "shortest": [
+          13,
+          7,
+          12,
+          18,
+          15,
+          13,
+          8,
+          8,
+          6,
+          10,
+          11,
+          14,
+          10,
+          11,
+          9,
+          9,
+          8,
+          7,
+          8,
+          13,
+          10,
+          11,
+          11,
+          9,
+          17,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 3897468,
+      "name": "rojasleon",
+      "handle": "f0fb55c38402d7592db16ef2ef51372b8647983",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 4056731,
+      "name": "luj8n",
+      "avatarId": 60126347814479,
+      "handle": "da07df1e62645285d15f1c9e477bd1e01376504",
+      "total": 80,
+      "fTotal": 26,
+      "rTotal": 14,
+      "sTotal": 40,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 34
+        },
+        {
+          "name": "Javascript",
+          "used": 43
+        },
+        {
+          "name": "PHP",
+          "used": 1
+        },
+        {
+          "name": "Haskell",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          10,
+          7,
+          3,
+          7,
+          11,
+          5,
+          9,
+          7,
+          4,
+          5,
+          6,
+          5,
+          3,
+          2,
+          6,
+          8,
+          6,
+          9,
+          10,
+          11,
+          5,
+          12,
+          12,
+          5,
+          11
+        ],
+        "reverse": [
+          5,
+          4,
+          3,
+          5,
+          8,
+          9,
+          9,
+          9,
+          2,
+          14,
+          7,
+          8,
+          10,
+          8
+        ],
+        "shortest": [
+          2,
+          11,
+          6,
+          8,
+          4,
+          17,
+          7,
+          10,
+          3,
+          2,
+          7,
+          4,
+          9,
+          4,
+          13,
+          3,
+          8,
+          3,
+          5,
+          4,
+          6,
+          3,
+          2,
+          9,
+          11,
+          5,
+          6,
+          13,
+          7,
+          10,
+          14,
+          8,
+          14,
+          10,
+          13,
+          2,
+          7,
+          5,
+          11,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4290399,
+      "name": "iggy12345",
+      "avatarId": 63031241927911,
+      "handle": "42de496c6243f12772a25c019f82e1879930924",
+      "total": 18,
+      "fTotal": 8,
+      "rTotal": 1,
+      "sTotal": 9,
+      "languages": [
+        {
+          "name": "Lua",
+          "used": 1
+        },
+        {
+          "name": "Python3",
+          "used": 13
+        },
+        {
+          "name": "C",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          12,
+          6,
+          8,
+          6,
+          3,
+          5,
+          8
+        ],
+        "reverse": [
+          12
+        ],
+        "shortest": [
+          8,
+          9,
+          15,
+          11,
+          8,
+          12,
+          7,
+          7,
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 4311926,
+      "name": "Grizo",
+      "avatarId": 63138505413170,
+      "handle": "65d79972dabe4f0e2f698bfdada886aa6291134",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Java",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 1938265,
+      "name": "ANONYMOUS42",
+      "avatarId": 62419806824913,
+      "handle": "fc4c8219a3135f75a5e3080e70a58fc25628391",
+      "total": 39,
+      "fTotal": 18,
+      "rTotal": 5,
+      "sTotal": 16,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 21
+        },
+        {
+          "name": "Ruby",
+          "used": 11
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        },
+        {
+          "name": "C",
+          "used": 3
+        },
+        {
+          "name": "Bash",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          3,
+          2,
+          8,
+          3,
+          7,
+          3,
+          4,
+          9,
+          4,
+          9,
+          9,
+          3,
+          3,
+          7,
+          4,
+          8,
+          11,
+          10
+        ],
+        "reverse": [
+          6,
+          7,
+          4,
+          11,
+          3
+        ],
+        "shortest": [
+          13,
+          3,
+          14,
+          2,
+          4,
+          4,
+          3,
+          16,
+          7,
+          9,
+          2,
+          15,
+          7,
+          3,
+          13,
+          3
+        ]
+      }
+    },
+    {
+      "playerId": 4166555,
+      "name": "Natanalel",
+      "handle": "4d6304314aeff2c2382c989f15063ad25556614",
+      "total": 95,
+      "fTotal": 39,
+      "rTotal": 17,
+      "sTotal": 39,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 92
+        },
+        {
+          "name": "Perl",
+          "used": 2
+        },
+        {
+          "name": "Bash",
+          "used": 1
+        }
+      ],
+      "won": 11,
+      "fWon": 5,
+      "rWon": 2,
+      "sWon": 4,
+      "ranks": {
+        "fastest": [
+          4,
+          5,
+          3,
+          2,
+          11,
+          2,
+          2,
+          3,
+          1,
+          10,
+          4,
+          5,
+          1,
+          2,
+          3,
+          1,
+          2,
+          5,
+          3,
+          4,
+          3,
+          11,
+          1,
+          5,
+          2,
+          7,
+          4,
+          1,
+          5,
+          3,
+          2,
+          11,
+          11,
+          2,
+          15,
+          8,
+          5,
+          15,
+          4
+        ],
+        "reverse": [
+          10,
+          4,
+          5,
+          2,
+          4,
+          2,
+          5,
+          2,
+          7,
+          2,
+          2,
+          5,
+          1,
+          6,
+          3,
+          3,
+          1
+        ],
+        "shortest": [
+          2,
+          4,
+          2,
+          1,
+          12,
+          5,
+          2,
+          4,
+          5,
+          3,
+          2,
+          2,
+          1,
+          14,
+          2,
+          2,
+          3,
+          1,
+          4,
+          3,
+          5,
+          2,
+          3,
+          1,
+          8,
+          3,
+          9,
+          3,
+          3,
+          5,
+          4,
+          5,
+          2,
+          8,
+          3,
+          10,
+          7,
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "playerId": 4123145,
+      "name": "bclaesen",
+      "handle": "12651866177c5ee873a4986cb67c99685413214",
+      "total": 10,
+      "fTotal": 3,
+      "rTotal": 2,
+      "sTotal": 5,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 5
+        },
+        {
+          "name": "Python3",
+          "used": 5
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          10,
+          4
+        ],
+        "reverse": [
+          3,
+          14
+        ],
+        "shortest": [
+          3,
+          10,
+          11,
+          15,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 4124688,
+      "name": "Murat_Eroglu",
+      "avatarId": 59833129301268,
+      "handle": "2f50fee6ded48ef1c8eb714473f023cc8864214",
+      "total": 88,
+      "fTotal": 33,
+      "rTotal": 17,
+      "sTotal": 38,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 14
+        },
+        {
+          "name": "Bash",
+          "used": 2
+        },
+        {
+          "name": "Python3",
+          "used": 65
+        },
+        {
+          "name": "PHP",
+          "used": 1
+        },
+        {
+          "name": "C",
+          "used": 2
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        },
+        {
+          "name": "Kotlin",
+          "used": 1
+        },
+        {
+          "name": "Java",
+          "used": 1
+        },
+        {
+          "name": "C++",
+          "used": 1
+        }
+      ],
+      "won": 13,
+      "fWon": 4,
+      "rWon": 7,
+      "sWon": 2,
+      "ranks": {
+        "fastest": [
+          3,
+          11,
+          5,
+          6,
+          6,
+          9,
+          5,
+          4,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1,
+          6,
+          7,
+          6,
+          1,
+          10,
+          3,
+          5,
+          4,
+          2,
+          7,
+          8,
+          8,
+          5,
+          2,
+          8,
+          1,
+          8,
+          3,
+          3
+        ],
+        "reverse": [
+          2,
+          2,
+          1,
+          6,
+          1,
+          1,
+          3,
+          5,
+          5,
+          1,
+          7,
+          5,
+          1,
+          7,
+          1,
+          4,
+          1
+        ],
+        "shortest": [
+          4,
+          14,
+          7,
+          2,
+          3,
+          6,
+          4,
+          2,
+          5,
+          3,
+          3,
+          6,
+          11,
+          7,
+          7,
+          7,
+          6,
+          4,
+          1,
+          11,
+          4,
+          12,
+          12,
+          4,
+          6,
+          5,
+          6,
+          2,
+          9,
+          3,
+          7,
+          7,
+          4,
+          6,
+          4,
+          1,
+          9,
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 4154685,
+      "name": "pindsz",
+      "avatarId": 57966309939312,
+      "handle": "bee6264d913c0b3eeb7c9a533596eba75864514",
+      "total": 75,
+      "fTotal": 25,
+      "rTotal": 12,
+      "sTotal": 38,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 32
+        },
+        {
+          "name": "Bash",
+          "used": 2
+        },
+        {
+          "name": "Python3",
+          "used": 34
+        },
+        {
+          "name": "Javascript",
+          "used": 1
+        },
+        {
+          "name": "Perl",
+          "used": 5
+        }
+      ],
+      "won": 11,
+      "fWon": 8,
+      "rWon": 1,
+      "sWon": 2,
+      "ranks": {
+        "fastest": [
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          3,
+          15,
+          12,
+          7,
+          5,
+          8,
+          12,
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          11,
+          5,
+          16,
+          2
+        ],
+        "reverse": [
+          8,
+          6,
+          1,
+          4,
+          12,
+          11,
+          9,
+          9,
+          3,
+          5,
+          4,
+          3
+        ],
+        "shortest": [
+          6,
+          13,
+          6,
+          9,
+          3,
+          2,
+          4,
+          5,
+          3,
+          2,
+          11,
+          3,
+          7,
+          3,
+          10,
+          4,
+          1,
+          3,
+          12,
+          2,
+          4,
+          3,
+          4,
+          3,
+          4,
+          2,
+          3,
+          8,
+          4,
+          14,
+          2,
+          13,
+          2,
+          6,
+          6,
+          1,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 3991981,
+      "name": "sahilrox",
+      "avatarId": 52340169482033,
+      "handle": "ebb1f4a1863f74bf9820b69537a5fce61891993",
+      "total": 10,
+      "fTotal": 6,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 10
+        }
+      ],
+      "won": 2,
+      "fWon": 2,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          1,
+          1,
+          2,
+          8,
+          6
+        ],
+        "reverse": [
+          3
+        ],
+        "shortest": [
+          10,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 4172499,
+      "name": "drantini",
+      "avatarId": 58426106322996,
+      "handle": "b5900cab905471257fba803807a4441a9942714",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [],
+        "shortest": [
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 3723147,
+      "name": "kostis14",
+      "avatarId": 63248127092687,
+      "handle": "afdd5c84d9b2ee92c14bcc00c86ee9f77413273",
+      "total": 38,
+      "fTotal": 13,
+      "rTotal": 4,
+      "sTotal": 21,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 36
+        },
+        {
+          "name": "Clojure",
+          "used": 1
+        },
+        {
+          "name": "Java",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14,
+          9,
+          10,
+          10,
+          9,
+          6,
+          10,
+          8,
+          4,
+          6,
+          11,
+          8,
+          9
+        ],
+        "reverse": [
+          10,
+          10,
+          7,
+          9
+        ],
+        "shortest": [
+          13,
+          8,
+          14,
+          12,
+          13,
+          14,
+          17,
+          9,
+          8,
+          9,
+          12,
+          6,
+          14,
+          8,
+          12,
+          10,
+          15,
+          10,
+          11,
+          10,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 3893564,
+      "name": "Andriamanitra",
+      "avatarId": 46641547586781,
+      "handle": "8931375f2caabaa3c46fc9401a856edf4653983",
+      "total": 32,
+      "fTotal": 9,
+      "rTotal": 6,
+      "sTotal": 17,
+      "languages": [
+        {
+          "name": "D",
+          "used": 2
+        },
+        {
+          "name": "Bash",
+          "used": 1
+        },
+        {
+          "name": "Rust",
+          "used": 1
+        },
+        {
+          "name": "Ruby",
+          "used": 21
+        },
+        {
+          "name": "Python3",
+          "used": 1
+        },
+        {
+          "name": "Clojure",
+          "used": 1
+        },
+        {
+          "name": "Haskell",
+          "used": 4
+        },
+        {
+          "name": "Dart",
+          "used": 1
+        }
+      ],
+      "won": 3,
+      "fWon": 1,
+      "rWon": 0,
+      "sWon": 2,
+      "ranks": {
+        "fastest": [
+          1,
+          8,
+          5,
+          7,
+          7,
+          6,
+          6,
+          2,
+          8
+        ],
+        "reverse": [
+          4,
+          7,
+          6,
+          3,
+          6,
+          4
+        ],
+        "shortest": [
+          14,
+          10,
+          1,
+          3,
+          5,
+          2,
+          5,
+          6,
+          1,
+          12,
+          10,
+          12,
+          2,
+          2,
+          15,
+          9,
+          5
+        ]
+      }
+    },
+    {
+      "playerId": 3338191,
+      "name": "C_breeze",
+      "avatarId": 61183647505459,
+      "handle": "6c5a569518b7f3a9a401b013e39efa5a1918333",
+      "total": 12,
+      "fTotal": 5,
+      "rTotal": 1,
+      "sTotal": 6,
+      "languages": [
+        {
+          "name": "C",
+          "used": 12
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10,
+          6,
+          10,
+          7,
+          6
+        ],
+        "reverse": [
+          6
+        ],
+        "shortest": [
+          15,
+          11,
+          11,
+          13,
+          7,
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 3842887,
+      "name": "remi6",
+      "avatarId": 45565502170324,
+      "handle": "c43e0a2c5341778a1be4df94dc0cb6ec7882483",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [],
+        "shortest": [
+          2,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 370891,
+      "name": "scogliani",
+      "avatarId": 57712547203486,
+      "handle": "ebda955121fe7592d5db42b1f184c5e7198073",
+      "total": 12,
+      "fTotal": 5,
+      "rTotal": 2,
+      "sTotal": 5,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 11
+        },
+        {
+          "name": "C",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10,
+          6,
+          11,
+          11,
+          8
+        ],
+        "reverse": [
+          11,
+          5
+        ],
+        "shortest": [
+          5,
+          12,
+          16,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 4174550,
+      "name": "BlizzardTech",
+      "avatarId": 58695625028825,
+      "handle": "ffb6984efacdf15d9157c316a09949ab0554714",
+      "total": 20,
+      "fTotal": 9,
+      "rTotal": 3,
+      "sTotal": 8,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 12
+        },
+        {
+          "name": "Java",
+          "used": 7
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          2,
+          8,
+          2,
+          3,
+          5,
+          10,
+          6,
+          6
+        ],
+        "reverse": [
+          7,
+          11,
+          2
+        ],
+        "shortest": [
+          5,
+          2,
+          6,
+          8,
+          8,
+          6,
+          16,
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 4274399,
+      "name": "AdrienPEREIRA1",
+      "avatarId": 61909704142496,
+      "handle": "5ff664da9f45f7f29b7316d548182a429934724",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [],
+        "shortest": [
+          13,
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 3527676,
+      "name": "Kitkat260",
+      "avatarId": 60753669913830,
+      "handle": "6f7ce7ac8c2110546a866c64c305c7636767253",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 4312005,
+      "name": "cdc_coding",
+      "avatarId": 63128566580145,
+      "handle": "3b458b003d84000c4f862f8b96266fc05002134",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 4312039,
+      "name": "gigolo",
+      "avatarId": 63129084562562,
+      "handle": "20ae948e5ba519395cbab82aa55241019302134",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        },
+        {
+          "name": "Ruby",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12
+        ],
+        "reverse": [],
+        "shortest": [
+          6
+        ]
+      }
+    },
+    {
+      "playerId": 4274963,
+      "name": "lynn1",
+      "handle": "b1097bf853a1499d573a7cd131c101253694724",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 1,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          1
+        ]
+      }
+    },
+    {
+      "playerId": 4297099,
+      "name": "Laukalt",
+      "handle": "3c52947b001977a47673adebd9e9d1799907924",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13
+        ],
+        "reverse": [],
+        "shortest": [
+          3,
+          16,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 230015,
+      "name": "Kolo9",
+      "handle": "0a297ac01beb29a613c5978bd433fe83510032",
+      "total": 24,
+      "fTotal": 6,
+      "rTotal": 4,
+      "sTotal": 14,
+      "languages": [
+        {
+          "name": "Perl",
+          "used": 24
+        }
+      ],
+      "won": 10,
+      "fWon": 1,
+      "rWon": 2,
+      "sWon": 7,
+      "ranks": {
+        "fastest": [
+          8,
+          5,
+          5,
+          5,
+          1,
+          13
+        ],
+        "reverse": [
+          3,
+          1,
+          1,
+          6
+        ],
+        "shortest": [
+          4,
+          4,
+          1,
+          1,
+          5,
+          2,
+          5,
+          1,
+          1,
+          5,
+          1,
+          4,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "playerId": 1850671,
+      "name": "buggystyle",
+      "avatarId": 11455503159365,
+      "handle": "9e0887160e96ccd25ea303e3af88f6771760581",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          3
+        ],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          6
+        ]
+      }
+    },
+    {
+      "playerId": 3657275,
+      "name": "jujurocking",
+      "handle": "f3b40fe5b707ba62cf9b070f04a8ab495727563",
+      "total": 5,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12
+        ],
+        "reverse": [],
+        "shortest": [
+          9,
+          5,
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 4291657,
+      "name": "ItsImpulse",
+      "handle": "312ae5a22ab28e6567a38d5d030264987561924",
+      "total": 22,
+      "fTotal": 8,
+      "rTotal": 5,
+      "sTotal": 9,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 18
+        },
+        {
+          "name": "C",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9,
+          4,
+          5,
+          6,
+          5,
+          8,
+          6,
+          6
+        ],
+        "reverse": [
+          11,
+          7,
+          8,
+          7,
+          7
+        ],
+        "shortest": [
+          10,
+          11,
+          11,
+          9,
+          7,
+          8,
+          6,
+          9,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 4268887,
+      "name": "XeroOl",
+      "avatarId": 61677668562388,
+      "handle": "5a1050349c5e4441f2fd728b442bf0507888624",
+      "total": 10,
+      "fTotal": 6,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Lua",
+          "used": 2
+        },
+        {
+          "name": "Python3",
+          "used": 4
+        },
+        {
+          "name": "Ruby",
+          "used": 1
+        },
+        {
+          "name": "D",
+          "used": 1
+        },
+        {
+          "name": "Kotlin",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          2,
+          2,
+          5,
+          9,
+          4,
+          7
+        ],
+        "reverse": [
+          7
+        ],
+        "shortest": [
+          11,
+          3,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4296560,
+      "name": "KamalOS",
+      "avatarId": 62712866836360,
+      "handle": "e0d785bf01e84f21fa1a25ad67b680de0656924",
+      "total": 9,
+      "fTotal": 5,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 8
+        },
+        {
+          "name": "C",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          12,
+          11,
+          8,
+          12
+        ],
+        "reverse": [
+          12
+        ],
+        "shortest": [
+          14,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4122723,
+      "name": "Hydrazer",
+      "avatarId": 62269304810770,
+      "handle": "9402aeb8a8667715fabc5a133fd8167a3272214",
+      "total": 31,
+      "fTotal": 10,
+      "rTotal": 7,
+      "sTotal": 14,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 25
+        },
+        {
+          "name": "Perl",
+          "used": 6
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          5,
+          8,
+          6,
+          9,
+          2,
+          11,
+          3,
+          9,
+          4
+        ],
+        "reverse": [
+          8,
+          8,
+          9,
+          2,
+          7,
+          3,
+          7
+        ],
+        "shortest": [
+          9,
+          20,
+          8,
+          6,
+          9,
+          6,
+          2,
+          5,
+          8,
+          6,
+          8,
+          7,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 4237065,
+      "name": "twitchtv_redsmoke3001",
+      "handle": "1be2ad7f5793744969621a23c4068dd85607324",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11
+        ],
+        "reverse": [],
+        "shortest": [
+          18
+        ]
+      }
+    },
+    {
+      "playerId": 4047025,
+      "name": "the_pianist",
+      "avatarId": 53036647007263,
+      "handle": "4b68caae896c8c3105333071f9775a105207404",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          12
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3740142,
+      "name": "EliteDaMyth",
+      "avatarId": 47179527337932,
+      "handle": "e6ca73af057e7102674180b0762318f72410473",
+      "total": 9,
+      "fTotal": 4,
+      "rTotal": 1,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 6
+        },
+        {
+          "name": "PHP",
+          "used": 2
+        },
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 1,
+      "ranks": {
+        "fastest": [
+          5,
+          9,
+          3,
+          10
+        ],
+        "reverse": [
+          9
+        ],
+        "shortest": [
+          8,
+          5,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "playerId": 4279372,
+      "name": "menderberg",
+      "handle": "285f9e61096b2c9ea9dac35a7044d9272739724",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          18,
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 1336301,
+      "name": "Ohrt",
+      "avatarId": 55886546231964,
+      "handle": "e1aa94368c8a3b1719b69fa9bec4570e1036331",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5
+        ],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          10,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 232717,
+      "name": "kurtesy",
+      "avatarId": 4463347427807,
+      "handle": "a5d6fe106e62ebdec6af2d66bc83c310717232",
+      "total": 5,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 5
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          3
+        ],
+        "reverse": [],
+        "shortest": [
+          12,
+          5,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 4175165,
+      "name": "rozbrajaczpoziomow",
+      "avatarId": 58534487291864,
+      "handle": "01fe5abc1e9da83530dbfa53179dc8805615714",
+      "total": 12,
+      "fTotal": 7,
+      "rTotal": 2,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        },
+        {
+          "name": "VB.NET",
+          "used": 1
+        },
+        {
+          "name": "Ruby",
+          "used": 7
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          4,
+          6,
+          9,
+          8,
+          2,
+          8
+        ],
+        "reverse": [
+          1,
+          7
+        ],
+        "shortest": [
+          14,
+          10,
+          3
+        ]
+      }
+    },
+    {
+      "playerId": 534361,
+      "name": "MrPapaya",
+      "avatarId": 60605642423308,
+      "handle": "d5a4add07b257c87197b56f1735ffbc8163435",
+      "total": 42,
+      "fTotal": 14,
+      "rTotal": 10,
+      "sTotal": 18,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 40
+        },
+        {
+          "name": "C",
+          "used": 2
+        }
+      ],
+      "won": 13,
+      "fWon": 7,
+      "rWon": 4,
+      "sWon": 2,
+      "ranks": {
+        "fastest": [
+          2,
+          10,
+          1,
+          4,
+          5,
+          1,
+          2,
+          1,
+          1,
+          5,
+          2,
+          1,
+          1,
+          1
+        ],
+        "reverse": [
+          3,
+          3,
+          6,
+          1,
+          1,
+          1,
+          9,
+          13,
+          1,
+          2
+        ],
+        "shortest": [
+          5,
+          3,
+          4,
+          7,
+          1,
+          6,
+          3,
+          6,
+          4,
+          12,
+          3,
+          7,
+          20,
+          14,
+          1,
+          6,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 4208448,
+      "name": "planck6",
+      "avatarId": 62220843983318,
+      "handle": "051a2d4ec00f7272d87ac7544d02b0318448024",
+      "total": 40,
+      "fTotal": 14,
+      "rTotal": 10,
+      "sTotal": 16,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 40
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          3,
+          7,
+          8,
+          5,
+          6,
+          10,
+          8,
+          8,
+          7,
+          6,
+          12,
+          11,
+          14
+        ],
+        "reverse": [
+          5,
+          6,
+          6,
+          11,
+          5,
+          6,
+          9,
+          17,
+          10,
+          9
+        ],
+        "shortest": [
+          6,
+          6,
+          4,
+          7,
+          10,
+          10,
+          8,
+          9,
+          6,
+          12,
+          7,
+          7,
+          14,
+          8,
+          11,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 3997286,
+      "name": "eXpensia",
+      "handle": "686d82f41cac83aad100e29d6ee102f26827993",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4233645,
+      "name": "Jackbar21",
+      "avatarId": 62004229767250,
+      "handle": "ce67f86a728f30dafbceab24e11e5d6f5463324",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5
+        ],
+        "reverse": [
+          8
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4233955,
+      "name": "Christian_P",
+      "avatarId": 60454028824840,
+      "handle": "16d7a0b3d4c4c491fb97b107906abdcc5593324",
+      "total": 8,
+      "fTotal": 5,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 8
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7,
+          10,
+          9,
+          6,
+          8
+        ],
+        "reverse": [
+          11
+        ],
+        "shortest": [
+          10,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 3864628,
+      "name": "Rens2005",
+      "handle": "c44d72a55dc8e75f961dc4debfc484a98264683",
+      "total": 3,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          8,
+          6
+        ],
+        "reverse": [
+          14
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 1279468,
+      "name": "brotatotes",
+      "handle": "264651c5c3aca06dfe24284350d56c928649721",
+      "total": 4,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 1,
+      "fWon": 0,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          1
+        ],
+        "shortest": [
+          7,
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 3060980,
+      "name": "naxmefy",
+      "avatarId": 62301724561463,
+      "handle": "215dcd7c36153f0a24ad85c0d558aca70890603",
+      "total": 24,
+      "fTotal": 10,
+      "rTotal": 5,
+      "sTotal": 9,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 20
+        },
+        {
+          "name": "Ruby",
+          "used": 2
+        },
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          9,
+          7,
+          5,
+          7,
+          7,
+          8,
+          7,
+          9,
+          10
+        ],
+        "reverse": [
+          7,
+          3,
+          9,
+          7,
+          12
+        ],
+        "shortest": [
+          4,
+          7,
+          5,
+          8,
+          6,
+          7,
+          9,
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4309093,
+      "name": "ninevillage",
+      "handle": "de2af980dc45e34db1d71b6cc16afdda3909034",
+      "total": 3,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          9
+        ],
+        "shortest": [
+          12,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 2156050,
+      "name": "ricochet1k",
+      "handle": "8aaaf149f84176c758c28c8121580e760506512",
+      "total": 11,
+      "fTotal": 6,
+      "rTotal": 1,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 10
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          3,
+          5,
+          8,
+          4,
+          10
+        ],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          14,
+          6,
+          10,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 4155983,
+      "name": "o0lit3",
+      "avatarId": 58386742395102,
+      "handle": "5a2988d36f05d58f9d0a8b224e486fd23895514",
+      "total": 12,
+      "fTotal": 8,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Perl",
+          "used": 12
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7,
+          7,
+          11,
+          8,
+          6,
+          6,
+          3,
+          9
+        ],
+        "reverse": [
+          4
+        ],
+        "shortest": [
+          5,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "playerId": 2599346,
+      "name": "GroutchKeu",
+      "avatarId": 18836681857822,
+      "handle": "e1b835e72f7d40398dcafd95208da1296439952",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          11
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4299607,
+      "name": "TennyKs",
+      "avatarId": 62774980501192,
+      "handle": "74c48c653ba7f9e1b99b2e05dc03da047069924",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4020421,
+      "name": "TRex1",
+      "handle": "f186a49d26cce39afca483e75af6df9d1240204",
+      "total": 4,
+      "fTotal": 3,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9,
+          13,
+          8
+        ],
+        "reverse": [],
+        "shortest": [
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4273807,
+      "name": "luiscjs",
+      "avatarId": 62895227389587,
+      "handle": "ce7a7045b37d572ab68cab79e707fa217083724",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          14
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4263196,
+      "name": "gilufin",
+      "avatarId": 61534942486988,
+      "handle": "efb58ec9837b18fd1ebcc7f228f469816913624",
+      "total": 14,
+      "fTotal": 4,
+      "rTotal": 5,
+      "sTotal": 5,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 14
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          5,
+          7,
+          9
+        ],
+        "reverse": [
+          5,
+          7,
+          5,
+          3,
+          3
+        ],
+        "shortest": [
+          7,
+          8,
+          10,
+          6,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 475134,
+      "name": "AgathokakologicalBit",
+      "avatarId": 60187129917901,
+      "handle": "c02acda6ae78a297f6fb49119c0b5654431574",
+      "total": 30,
+      "fTotal": 11,
+      "rTotal": 4,
+      "sTotal": 15,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 22
+        },
+        {
+          "name": "C",
+          "used": 5
+        },
+        {
+          "name": "Haskell",
+          "used": 1
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        },
+        {
+          "name": "C++",
+          "used": 1
+        }
+      ],
+      "won": 2,
+      "fWon": 1,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          2,
+          9,
+          2,
+          8,
+          6,
+          6,
+          4,
+          1,
+          5,
+          2,
+          7
+        ],
+        "reverse": [
+          1,
+          2,
+          4,
+          11
+        ],
+        "shortest": [
+          6,
+          5,
+          6,
+          6,
+          15,
+          13,
+          12,
+          5,
+          10,
+          7,
+          9,
+          10,
+          3,
+          2,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 1797069,
+      "name": "puni[-_-].oO",
+      "avatarId": 18295325831032,
+      "handle": "1a6d9eeaaa9f684493d8feb82cbdd6ba9607971",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3368492,
+      "name": "swim",
+      "handle": "4254a8d6943e7b1cdb8cc93e27be175b2948633",
+      "total": 8,
+      "fTotal": 3,
+      "rTotal": 2,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 8
+        }
+      ],
+      "won": 1,
+      "fWon": 1,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          1,
+          5
+        ],
+        "reverse": [
+          2,
+          13
+        ],
+        "shortest": [
+          3,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 1757854,
+      "name": "_Flippy",
+      "avatarId": 18192713851660,
+      "handle": "26808cda54ef9a01ed543965e5a9f1f94587571",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6
+        ],
+        "reverse": [
+          9
+        ],
+        "shortest": [
+          9,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 3924786,
+      "name": "Tionkje",
+      "avatarId": 62710605796918,
+      "handle": "42418ad40b18442f4e75d0f34553b3b36874293",
+      "total": 7,
+      "fTotal": 3,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 7
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11,
+          12,
+          10
+        ],
+        "reverse": [
+          8
+        ],
+        "shortest": [
+          7,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4007090,
+      "name": "number8888",
+      "handle": "18cf2dfbf0836e0e98752c456db1b68c0907004",
+      "total": 5,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 5
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          8,
+          9
+        ],
+        "reverse": [
+          12
+        ],
+        "shortest": [
+          10,
+          21
+        ]
+      }
+    },
+    {
+      "playerId": 3335896,
+      "name": "_martynas",
+      "avatarId": 28973064717677,
+      "handle": "3b151b168e9864542670317236ef605d6985333",
+      "total": 6,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 6
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          2,
+          14
+        ],
+        "reverse": [
+          2
+        ],
+        "shortest": [
+          4,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 3971835,
+      "name": "InternalErrror",
+      "avatarId": 50034967625688,
+      "handle": "af26f8a9e3129c138e7e27c739d384bf5381793",
+      "total": 4,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          13
+        ],
+        "reverse": [
+          6
+        ],
+        "shortest": [
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 3823708,
+      "name": "blald",
+      "handle": "8e2bb84a18543f817b499126e241ce0b8073283",
+      "total": 22,
+      "fTotal": 10,
+      "rTotal": 3,
+      "sTotal": 9,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 18
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          9,
+          4,
+          3,
+          12,
+          8,
+          7,
+          11,
+          13,
+          15
+        ],
+        "reverse": [
+          9,
+          8,
+          9
+        ],
+        "shortest": [
+          12,
+          6,
+          9,
+          4,
+          4,
+          3,
+          15,
+          4,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 3878216,
+      "name": "Ashik-_-",
+      "avatarId": 59932247115956,
+      "handle": "0bcab31aac968e5a7d027bd4352caf0e6128783",
+      "total": 32,
+      "fTotal": 13,
+      "rTotal": 8,
+      "sTotal": 11,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 32
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11,
+          7,
+          6,
+          8,
+          6,
+          9,
+          10,
+          11,
+          12,
+          11,
+          13,
+          10,
+          13
+        ],
+        "reverse": [
+          3,
+          10,
+          5,
+          8,
+          18,
+          6,
+          6,
+          10
+        ],
+        "shortest": [
+          14,
+          5,
+          10,
+          11,
+          13,
+          12,
+          6,
+          8,
+          8,
+          15,
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 3310051,
+      "name": "Intp",
+      "avatarId": 51764346743829,
+      "handle": "62fcb34cd0172c7f844a390d1841f5581500133",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4181514,
+      "name": "bl1zzard",
+      "handle": "1341ecd9c882aa1beb8591affe3c96974151814",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        },
+        {
+          "name": "Kotlin",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          15
+        ],
+        "reverse": [],
+        "shortest": [
+          7,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4124845,
+      "name": "CollidedScope",
+      "avatarId": 56670144039392,
+      "handle": "95d48cbff1fec7691cf06c2c8ec2e6975484214",
+      "total": 7,
+      "fTotal": 1,
+      "rTotal": 2,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 7
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [
+          3,
+          11
+        ],
+        "shortest": [
+          5,
+          2,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 3503926,
+      "name": "vivax3794",
+      "avatarId": 62073461205448,
+      "handle": "77e99ab38d5b1d335bbebafa23edbdd66293053",
+      "total": 18,
+      "fTotal": 6,
+      "rTotal": 1,
+      "sTotal": 11,
+      "languages": [
+        {
+          "name": "Haskell",
+          "used": 17
+        },
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          3,
+          2,
+          2,
+          4,
+          7,
+          6
+        ],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          6,
+          9,
+          5,
+          9,
+          9,
+          9,
+          6,
+          2,
+          3,
+          6,
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 1611060,
+      "name": "Gunhack",
+      "avatarId": 38697948271733,
+      "handle": "b91b79374e8ea41438b8dd289c3b84320601161",
+      "total": 4,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10,
+          11
+        ],
+        "reverse": [],
+        "shortest": [
+          8,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4288033,
+      "name": "Alonius",
+      "handle": "ffa1767c790f0ea7befdb38409a0e14e3308824",
+      "total": 10,
+      "fTotal": 3,
+      "rTotal": 2,
+      "sTotal": 5,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 10
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          3,
+          3
+        ],
+        "reverse": [
+          8,
+          9
+        ],
+        "shortest": [
+          7,
+          8,
+          7,
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4263635,
+      "name": "Chaosence",
+      "handle": "d1b5e37a744096a45fe4689ff7a605fd5363624",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          7
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4231040,
+      "name": "EmperorSprigg",
+      "handle": "f008d1664a5431204948f66d79d7cac70401324",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 2,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [
+          9,
+          5
+        ],
+        "shortest": [
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 154906,
+      "name": "JBM",
+      "handle": "0d71f9df5da706f9f77c07c34d12480e609451",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Bash",
+          "used": 1
+        },
+        {
+          "name": "Perl",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [],
+        "shortest": [
+          3
+        ]
+      }
+    },
+    {
+      "playerId": 2494945,
+      "name": "ProTon",
+      "handle": "af8cb75efb21b50b94736770f1b0cfd55494942",
+      "total": 20,
+      "fTotal": 9,
+      "rTotal": 3,
+      "sTotal": 8,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 13
+        },
+        {
+          "name": "Ruby",
+          "used": 7
+        }
+      ],
+      "won": 4,
+      "fWon": 2,
+      "rWon": 1,
+      "sWon": 1,
+      "ranks": {
+        "fastest": [
+          1,
+          4,
+          4,
+          5,
+          11,
+          7,
+          1,
+          9,
+          13
+        ],
+        "reverse": [
+          4,
+          1,
+          5
+        ],
+        "shortest": [
+          5,
+          5,
+          6,
+          5,
+          2,
+          12,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "playerId": 4104676,
+      "name": "toma69",
+      "avatarId": 55679624497157,
+      "handle": "66ea6f4f365fd8e84e78df1854381acc6764014",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        },
+        {
+          "name": "Ruby",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9
+        ],
+        "reverse": [],
+        "shortest": [
+          11,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4158980,
+      "name": "ivan_sirko",
+      "avatarId": 60027489786640,
+      "handle": "e5708fb79feaead29756e3ff8c691d4d0898514",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10
+        ],
+        "reverse": [],
+        "shortest": [
+          15,
+          14,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 3818149,
+      "name": "CodeCyan",
+      "avatarId": 58428848842708,
+      "handle": "58ba2de2457d7ba398cd8e52ad1da77b9418183",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "playerId": 4158940,
+      "name": "kurtp",
+      "avatarId": 57985901722558,
+      "handle": "147de5ea9a41379fb2d443bb4a7674920498514",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 4185811,
+      "name": "Assaf_L",
+      "handle": "2405a2d479705a205d24dc12ebd01b081185814",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5
+        ],
+        "reverse": [
+          10
+        ],
+        "shortest": [
+          6,
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 4022244,
+      "name": "7777777",
+      "avatarId": 52139445644436,
+      "handle": "373cd77a3ee1b01856783156b5cfca4b4422204",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 3413813,
+      "name": "Hvosten",
+      "avatarId": 63052087147847,
+      "handle": "a3188ffcbcc4e6d565a6731f8495086b3183143",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10
+        ],
+        "reverse": [],
+        "shortest": [
+          6
+        ]
+      }
+    },
+    {
+      "playerId": 3823238,
+      "name": "Nuwaisir",
+      "avatarId": 57101900637515,
+      "handle": "5601a954f32b8ca79fc69ed562d118a58323283",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 1
+        },
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9
+        ],
+        "reverse": [],
+        "shortest": [
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 3927235,
+      "name": "Xepponir",
+      "avatarId": 52415300605498,
+      "handle": "99d7882b2914c1e6619d67967282957f5327293",
+      "total": 15,
+      "fTotal": 5,
+      "rTotal": 4,
+      "sTotal": 6,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        },
+        {
+          "name": "Javascript",
+          "used": 7
+        },
+        {
+          "name": "PHP",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11,
+          9,
+          12,
+          10,
+          12
+        ],
+        "reverse": [
+          6,
+          11,
+          8,
+          11
+        ],
+        "shortest": [
+          11,
+          11,
+          9,
+          7,
+          14,
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4162937,
+      "name": "ANJACE_Z",
+      "avatarId": 58093901919095,
+      "handle": "40bea72adef188d405abbcfb9d715d697392614",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          11,
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 3919130,
+      "name": "granitlarge",
+      "handle": "11d1903b9f3af9379f6dde9a650737cd0319193",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          9
+        ]
+      }
+    },
+    {
+      "playerId": 855230,
+      "name": "JordyH",
+      "avatarId": 4623370874080,
+      "handle": "33dd0de4f4609e336c85d4558243842a032558",
+      "total": 4,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7,
+          9
+        ],
+        "reverse": [
+          4
+        ],
+        "shortest": [
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 2143560,
+      "name": "ashikujjaman",
+      "handle": "9c5c2d2d3313829e5d766e61dd6bff7c0653412",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 4025960,
+      "name": "rohitkumar212",
+      "avatarId": 62419925681197,
+      "handle": "d0c1ea9c2a2758d209eb4d0028aa99d20695204",
+      "total": 3,
+      "fTotal": 3,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "C",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9,
+          8,
+          10
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4180659,
+      "name": "abrman",
+      "avatarId": 59164829902476,
+      "handle": "2dced12a4034f57aaa9aa5378184a93e9560814",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          4
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3766975,
+      "name": "ImPalindrome",
+      "handle": "5c00db21c0694a92945f94215d3c880b5796673",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          4
+        ],
+        "shortest": [
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 2873208,
+      "name": "Cloud4Code",
+      "avatarId": 26223095085855,
+      "handle": "1e3e2380c19a2ddde3761a3f7b75db578023782",
+      "total": 3,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9,
+          13
+        ],
+        "reverse": [],
+        "shortest": [
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4271100,
+      "name": "super_Macko",
+      "handle": "3e94e2f1d68a1da9a81897b85547e6410011724",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          11
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4283851,
+      "name": "zeenon",
+      "avatarId": 62301802664134,
+      "handle": "9c36c8dd5560ce527d26834f857ea0d01583824",
+      "total": 3,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          13
+        ],
+        "reverse": [],
+        "shortest": [
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 826671,
+      "name": "kayou",
+      "avatarId": 52835383345680,
+      "handle": "1154fdefd4e6326416ae46ec63351a39176628",
+      "total": 13,
+      "fTotal": 4,
+      "rTotal": 3,
+      "sTotal": 6,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 10
+        },
+        {
+          "name": "Ruby",
+          "used": 3
+        }
+      ],
+      "won": 2,
+      "fWon": 1,
+      "rWon": 1,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5,
+          1,
+          2,
+          4
+        ],
+        "reverse": [
+          1,
+          3,
+          11
+        ],
+        "shortest": [
+          5,
+          2,
+          5,
+          4,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "playerId": 4209274,
+      "name": "DetoBot",
+      "avatarId": 59701481560876,
+      "handle": "93b30b9958defa0ca0ec4b6272eb9d224729024",
+      "total": 8,
+      "fTotal": 2,
+      "rTotal": 2,
+      "sTotal": 4,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 8
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7,
+          11
+        ],
+        "reverse": [
+          11,
+          4
+        ],
+        "shortest": [
+          12,
+          8,
+          9,
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 3839055,
+      "name": "lsp",
+      "avatarId": 45339980664080,
+      "handle": "4ce8e9acdf1729cc4b7facc6d44a9e2e5509383",
+      "total": 4,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Go",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          9
+        ],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          10
+        ]
+      }
+    },
+    {
+      "playerId": 4127701,
+      "name": "SkyHopper21",
+      "handle": "5e97a95893265bfbb049514de77f17691077214",
+      "total": 29,
+      "fTotal": 9,
+      "rTotal": 7,
+      "sTotal": 13,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 24
+        },
+        {
+          "name": "Javascript",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          12,
+          10,
+          14,
+          7,
+          9,
+          11,
+          3,
+          15
+        ],
+        "reverse": [
+          5,
+          12,
+          5,
+          10,
+          6,
+          11,
+          11
+        ],
+        "shortest": [
+          13,
+          4,
+          8,
+          13,
+          5,
+          11,
+          16,
+          11,
+          10,
+          10,
+          18,
+          10,
+          18
+        ]
+      }
+    },
+    {
+      "playerId": 4240895,
+      "name": "LMNTRIX115",
+      "handle": "5101402d39882710ad803256b6c1bbb55980424",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          5
+        ],
+        "shortest": [
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 3887236,
+      "name": "thanveershah",
+      "handle": "bfb9f8e7fe5a11c7ecaf6a11d5f845946327883",
+      "total": 5,
+      "fTotal": 2,
+      "rTotal": 2,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          8
+        ],
+        "reverse": [
+          5,
+          11
+        ],
+        "shortest": [
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4072321,
+      "name": "P_Square",
+      "handle": "7b52d57ebfafeb006d4bdf9751e910481232704",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12
+        ],
+        "reverse": [
+          10
+        ],
+        "shortest": [
+          13
+        ]
+      }
+    },
+    {
+      "playerId": 3871331,
+      "name": "lastshamp",
+      "avatarId": 57663840582205,
+      "handle": "14ee1a68eec7e5a8d0bb59c2b17f25181331783",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13
+        ],
+        "reverse": [
+          9
+        ],
+        "shortest": [
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 4276590,
+      "name": "titoos_darlings",
+      "handle": "6909d409f33512d71d8b97d0dd89a4290956724",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "C",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          8
+        ],
+        "reverse": [
+          12
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3851748,
+      "name": "nitekat",
+      "avatarId": 62033686999406,
+      "handle": "8b7b1cbffc9520abd7d2bb14782d53788471583",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4237308,
+      "name": "The_Hobbyist",
+      "avatarId": 60461882140406,
+      "handle": "c149d29f8498c4cefb87ee50c0b5cd458037324",
+      "total": 4,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          7
+        ],
+        "shortest": [
+          14,
+          15,
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 2526465,
+      "name": "doritosxxx",
+      "avatarId": 17838342424936,
+      "handle": "58d6da6e630dd80027894db23db66a9c5646252",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          14,
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 2914192,
+      "name": "Xcisso",
+      "handle": "8593faf7103fd0d9cec4d5027ab83a982914192",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [],
+        "shortest": [
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 3971873,
+      "name": "MoKi",
+      "avatarId": 60989341843131,
+      "handle": "b47ae6ad391a7426fcfcfb509d6bfa0d3781793",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 1286620,
+      "name": "arhariss",
+      "avatarId": 63089327940811,
+      "handle": "297345c5d40eeb8a9d775b5210ffcf410266821",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          7
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3974834,
+      "name": "Dumazy",
+      "avatarId": 54716309319688,
+      "handle": "018357d575c250e0a3df5c8228b6b03d4384793",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Dart",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          9
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4280187,
+      "name": "webbsk",
+      "handle": "fb38d1be78fdc2951891ee6fb3a1b4587810824",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          9
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4278041,
+      "name": "Cakecrook",
+      "avatarId": 62443165826543,
+      "handle": "ea0cf74c179bfef269bdda79c1536bcd1408724",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          9
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4280189,
+      "name": "bigboi23",
+      "handle": "46b337caa02cc498319f34b05c90f6439810824",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          9
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4198291,
+      "name": "elcio",
+      "avatarId": 59373026712466,
+      "handle": "e3b1386e7417959fb951b0595ca8bf311928914",
+      "total": 3,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4,
+          14
+        ],
+        "reverse": [],
+        "shortest": [
+          5
+        ]
+      }
+    },
+    {
+      "playerId": 4279646,
+      "name": "Cleingoun",
+      "avatarId": 62153440328260,
+      "handle": "298e635eb4ca0a8a8c2fe5ad1de69cd06469724",
+      "total": 7,
+      "fTotal": 3,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Java",
+          "used": 7
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          16,
+          15
+        ],
+        "reverse": [
+          8
+        ],
+        "shortest": [
+          19,
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "playerId": 4279567,
+      "name": "heatwaven",
+      "handle": "ede1b02ab2e79418311bf03257ceec937659724",
+      "total": 5,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Java",
+          "used": 4
+        },
+        {
+          "name": "C#",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          16
+        ],
+        "reverse": [
+          9
+        ],
+        "shortest": [
+          13,
+          16
+        ]
+      }
+    },
+    {
+      "playerId": 4279568,
+      "name": "script11",
+      "handle": "c4ae0df2056728f3f038235eb1c751c48659724",
+      "total": 7,
+      "fTotal": 3,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Java",
+          "used": 7
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14,
+          13,
+          16
+        ],
+        "reverse": [
+          10
+        ],
+        "shortest": [
+          12,
+          15,
+          17
+        ]
+      }
+    },
+    {
+      "playerId": 4128828,
+      "name": "Vigasaurus",
+      "avatarId": 59730883013339,
+      "handle": "1fc9bb7426eac884ed8a78270632ac4f8288214",
+      "total": 4,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 4
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          16
+        ],
+        "reverse": [
+          2
+        ],
+        "shortest": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 2086418,
+      "name": "Azulflame",
+      "avatarId": 13463860916760,
+      "handle": "51e63fa99be14e847e6ec3e1435ec5fc8146802",
+      "total": 13,
+      "fTotal": 6,
+      "rTotal": 4,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Kotlin",
+          "used": 12
+        },
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6,
+          6,
+          10,
+          9,
+          6,
+          8
+        ],
+        "reverse": [
+          16,
+          8,
+          12,
+          9
+        ],
+        "shortest": [
+          18,
+          12,
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 1545656,
+      "name": "mvren",
+      "handle": "69ae6da46bfc7edd8740d353c23cbabb6565451",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          6
+        ],
+        "reverse": [],
+        "shortest": [
+          5
+        ]
+      }
+    },
+    {
+      "playerId": 4097580,
+      "name": "Lobster_Speed",
+      "avatarId": 55345866740849,
+      "handle": "fe4c34d8f15ae0927728518637c64b5b0857904",
+      "total": 5,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 3,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 5
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          4
+        ],
+        "reverse": [
+          7
+        ],
+        "shortest": [
+          10,
+          10,
+          8
+        ]
+      }
+    },
+    {
+      "playerId": 3915166,
+      "name": "Katespizer",
+      "avatarId": 57511445792070,
+      "handle": "b6ce98ce47b0f1f4729de6f4c463dfb46615193",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          14
+        ],
+        "shortest": [
+          11
+        ]
+      }
+    },
+    {
+      "playerId": 4274557,
+      "name": "Mr.Pepper",
+      "avatarId": 61920889145483,
+      "handle": "90c08717648a1e98469190b05a69bd547554724",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          5
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 1831286,
+      "name": "Pauloux",
+      "avatarId": 61683721678634,
+      "handle": "4f68e7f732a7d3a5500e4d11ac96df986821381",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3943936,
+      "name": "DJSchaffner",
+      "handle": "3f248ff6eff904cf1e6195dd78f059806393493",
+      "total": 2,
+      "fTotal": 2,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          13,
+          12
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 1236024,
+      "name": "xspeedasx",
+      "avatarId": 10520310903123,
+      "handle": "a9ccb4f4853589dc4133364c1f7057cc4206321",
+      "total": 2,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "C#",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          15
+        ],
+        "reverse": [
+          11
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4181500,
+      "name": "danyroza",
+      "avatarId": 58747443045099,
+      "handle": "e07caba85c49b6673a22300cec3ab1350051814",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          11
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3875843,
+      "name": "pengiooo",
+      "handle": "4eea92dd9156e09b0b4ef6d7400bd7843485783",
+      "total": 2,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          10
+        ],
+        "shortest": [
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 4275138,
+      "name": "WebGeeks",
+      "handle": "d0d0b6e2fd38a450b396588c05c8d2068315724",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          12
+        ]
+      }
+    },
+    {
+      "playerId": 3087454,
+      "name": "ungalabungala",
+      "avatarId": 50075702780611,
+      "handle": "054301341a7177e857216a1da7a9f2994547803",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          10
+        ],
+        "reverse": [
+          4
+        ],
+        "shortest": [
+          17
+        ]
+      }
+    },
+    {
+      "playerId": 4060459,
+      "name": "csgamernerd",
+      "handle": "fcdeafdfc4b3062f6cd8113e1b47628c9540604",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [
+        {
+          "name": "Java",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          6
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3695023,
+      "name": "solution.cpp",
+      "avatarId": 50301308670444,
+      "handle": "44f66d4827767c5bb5afabb191f955633205963",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "C++",
+          "used": 2
+        },
+        {
+          "name": "PHP",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          8
+        ],
+        "reverse": [
+          13
+        ],
+        "shortest": [
+          14
+        ]
+      }
+    },
+    {
+      "playerId": 3780632,
+      "name": "limaa",
+      "handle": "adcfca527d031e32784fa0b8f06ac7b32360873",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          15
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 3948124,
+      "name": "Sorc",
+      "avatarId": 49027548156065,
+      "handle": "8cff629100d87ec61d24b83f856ced524218493",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 3
+        }
+      ],
+      "won": 1,
+      "fWon": 1,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          1
+        ],
+        "reverse": [],
+        "shortest": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "playerId": 1136782,
+      "name": "gary003",
+      "handle": "e2949613ed833bbaece4363a2595c78c2876311",
+      "total": 5,
+      "fTotal": 2,
+      "rTotal": 1,
+      "sTotal": 2,
+      "languages": [
+        {
+          "name": "Ruby",
+          "used": 3
+        },
+        {
+          "name": "Javascript",
+          "used": 2
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          12,
+          12
+        ],
+        "reverse": [
+          7
+        ],
+        "shortest": [
+          16,
+          4
+        ]
+      }
+    },
+    {
+      "playerId": 3898813,
+      "name": "3ifndef",
+      "avatarId": 52619201098928,
+      "handle": "15d19e0668b629ac01fc5ce1fcc301943188983",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          7
+        ]
+      }
+    },
+    {
+      "playerId": 4273698,
+      "name": "LeinardoSmith",
+      "handle": "bd7fbcfdb20b849378271ed38daed3e98963724",
+      "total": 3,
+      "fTotal": 1,
+      "rTotal": 1,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 3
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [
+          12
+        ],
+        "shortest": [
+          15
+        ]
+      }
+    },
+    {
+      "playerId": 4267398,
+      "name": "proulkk",
+      "handle": "4adec464ac3c3a002289acd213e6c04d8937624",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 1,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [
+          12
+        ],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4183203,
+      "name": "TyrolkaGDBot",
+      "avatarId": 60355500509401,
+      "handle": "cdcaa41acd2a1e657bb08fe9302d308e3023814",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 4273719,
+      "name": "destinationunknown",
+      "handle": "bbaffaa73bc2a7117a4830aeffbf99779173724",
+      "total": 1,
+      "fTotal": 1,
+      "rTotal": 0,
+      "sTotal": 0,
+      "languages": [],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [
+          14
+        ],
+        "reverse": [],
+        "shortest": []
+      }
+    },
+    {
+      "playerId": 2494798,
+      "name": "EliTheCoder",
+      "avatarId": 27525800899351,
+      "handle": "e13ba637ccf2b7bd1c0381f89540618e8974942",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          15
+        ]
+      }
+    },
+    {
+      "playerId": 4270933,
+      "name": "EdwinZ",
+      "avatarId": 61756726252006,
+      "handle": "b1ab0016f213fd527de0dbc26a35a0df3390724",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Python3",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          17
+        ]
+      }
+    },
+    {
+      "playerId": 4084909,
+      "name": "bluehipy",
+      "avatarId": 59108125311613,
+      "handle": "71f1d63c5e71a957620a3afe71adf2f79094804",
+      "total": 1,
+      "fTotal": 0,
+      "rTotal": 0,
+      "sTotal": 1,
+      "languages": [
+        {
+          "name": "Javascript",
+          "used": 1
+        }
+      ],
+      "won": 0,
+      "fWon": 0,
+      "rWon": 0,
+      "sWon": 0,
+      "ranks": {
+        "fastest": [],
+        "reverse": [],
+        "shortest": [
+          19
+        ]
+      }
+    }
+  ],
+  "languages": [
+    {
+      "name": "Ruby",
+      "used": 477
+    },
+    {
+      "name": "Javascript",
+      "used": 221
+    },
+    {
+      "name": "Python3",
+      "used": 726
+    },
+    {
+      "name": "C++",
+      "used": 69
+    },
+    {
+      "name": "Lua",
+      "used": 3
+    },
+    {
+      "name": "Java",
+      "used": 29
+    },
+    {
+      "name": "D",
+      "used": 3
+    },
+    {
+      "name": "C",
+      "used": 50
+    },
+    {
+      "name": "Bash",
+      "used": 26
+    },
+    {
+      "name": "PHP",
+      "used": 11
+    },
+    {
+      "name": "Rust",
+      "used": 1
+    },
+    {
+      "name": "Perl",
+      "used": 58
+    },
+    {
+      "name": "OCaml",
+      "used": 1
+    },
+    {
+      "name": "Haskell",
+      "used": 25
+    },
+    {
+      "name": "VB.NET",
+      "used": 1
+    },
+    {
+      "name": "C#",
+      "used": 20
+    },
+    {
+      "name": "Clojure",
+      "used": 2
+    },
+    {
+      "name": "Dart",
+      "used": 3
+    },
+    {
+      "name": "Kotlin",
+      "used": 16
+    },
+    {
+      "name": "Go",
+      "used": 4
+    }
+  ]
+}
