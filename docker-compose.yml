@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  twitch_bot:
+    build:
+      context: ./bot
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./bot:/app
+  client:
+    build:
+      context: ./client
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./client:/app
+
+  mongodb:
+    image: mongo:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - store:/data/db
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+
+volumes:
+  store:
